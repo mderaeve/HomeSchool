@@ -1,0 +1,6 @@
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll.config
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.dll
+D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.pdb

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B94B96B6-64B8-4AFB-AE7D-589D752743B4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomeSchoolWeb</RootNamespace>
+    <AssemblyName>HomeSchoolWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.html" />
+    <Content Include="app\components\help\helpView.html" />
+    <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\directives\navigation\navigationView.html" />
+    <Content Include="css\custom.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\1487872027_Home.png" />
+    <Content Include="index.html" />
+    <Content Include="nodes\css\bootstrap-theme.css" />
+    <Content Include="nodes\css\bootstrap-theme.min.css" />
+    <Content Include="nodes\css\bootstrap.css" />
+    <Content Include="nodes\css\bootstrap.min.css" />
+    <Content Include="nodes\css\loading-bar.css" />
+    <Content Include="nodes\css\loading-bar.min.css" />
+    <Content Include="nodes\css\ngToast-animations.css" />
+    <Content Include="nodes\css\ngToast-animations.min.css" />
+    <Content Include="nodes\css\ngToast.css" />
+    <Content Include="nodes\css\ngToast.min.css" />
+    <Content Include="nodes\css\ui-bootstrap-csp.css" />
+    <Content Include="nodes\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="nodes\js\angular-animate.min.js" />
+    <Content Include="nodes\js\angular-messages.min.js" />
+    <Content Include="nodes\js\angular-sanitize.min.js" />
+    <Content Include="nodes\js\angular-ui-router.min.js" />
+    <Content Include="nodes\js\angular.min.js" />
+    <Content Include="nodes\js\bootbox.min.js" />
+    <Content Include="nodes\js\bootstrap.min.js" />
+    <Content Include="nodes\js\es6-shim.min.js" />
+    <Content Include="nodes\js\jquery.min.js" />
+    <Content Include="nodes\js\json3.min.js" />
+    <Content Include="nodes\js\loading-bar.min.js" />
+    <Content Include="nodes\js\ngToast.min.js" />
+    <Content Include="nodes\js\q.js" />
+    <Content Include="nodes\js\smart-table.min.js" />
+    <Content Include="nodes\js\ui-bootstrap-tpls.js" />
+    <Content Include="nodes\js\ui-bootstrap.js" />
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="nodes\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="nodes\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="nodes\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="nodes\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\components\math\" />
+    <Folder Include="app\filters\" />
+    <Folder Include="app\modals\" />
+    <Folder Include="app\resources\modals\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\appController.ts" />
+    <TypeScriptCompile Include="app\common\configuration.ts" />
+    <TypeScriptCompile Include="app\common\dictionary.ts" />
+    <TypeScriptCompile Include="app\common\keyvaluePair.ts" />
+    <TypeScriptCompile Include="app\common\list.ts" />
+    <TypeScriptCompile Include="app\common\localStorage\localStorageService.ts" />
+    <TypeScriptCompile Include="app\common\resourceHelper.ts" />
+    <TypeScriptCompile Include="app\common\resources\resourceBase.ts" />
+    <TypeScriptCompile Include="app\common\resources\resourceModule.ts" />
+    <TypeScriptCompile Include="app\components\help\helpController.ts" />
+    <TypeScriptCompile Include="app\components\home\homeController.ts" />
+    <TypeScriptCompile Include="app\directives\navigation\navigationController.ts" />
+    <TypeScriptCompile Include="app\directives\navigation\navigationDirective.ts" />
+    <TypeScriptCompile Include="app\factories\applicationLifeTimeService.ts" />
+    <TypeScriptCompile Include="app\models\DummyModel.ts" />
+    <TypeScriptCompile Include="app\models\Language.ts" />
+    <TypeScriptCompile Include="app\models\RejectMessage.ts" />
+    <TypeScriptCompile Include="app\resources\directives\navigation\navigationResources.ts" />
+    <TypeScriptCompile Include="app\resources\errors\errorResources.ts" />
+    <TypeScriptCompile Include="app\resources\components\help\helpResources.ts" />
+    <TypeScriptCompile Include="app\resources\components\home\homeResources.ts" />
+    <TypeScriptCompile Include="app\services\dummyService.ts" />
+    <TypeScriptCompile Include="app\services\logService.ts" />
+    <TypeScriptCompile Include="app\_app.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-dateparser\DateParser.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-dateparser\DateParserDirective.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-loading-bar\angular-loading-bar.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-ui-bootstrap\angular-ui-bootstrap.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-ui-router\angular-ui-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bootbox\bootbox.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\ngToast\ngToast.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\q\Q.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53094/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

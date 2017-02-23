@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projects\Home\Publisch</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.html">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="app/app.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/app.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/appController.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/appController.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/configuration.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/configuration.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/dictionary.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/dictionary.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/keyvaluePair.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/keyvaluePair.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/list.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/list.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/common/localStorage/localStorageService.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/localStorage/localStorageService.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resourceHelper.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resourceHelper.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resources/resourceBase.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resources/resourceBase.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resources/resourceModule.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/common/resources/resourceModule.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/components/help/helpController.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/components/help/helpController.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/components/help/helpView.html">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="app/components/home/homeController.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/components/home/homeController.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/components/home/homeView.html">
+      <publishTime>02/23/2017 22:01:23</publishTime>
+    </File>
+    <File Include="app/directives/navigation/navigationController.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/directives/navigation/navigationController.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/directives/navigation/navigationDirective.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/directives/navigation/navigationDirective.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/directives/navigation/navigationView.html">
+      <publishTime>02/23/2017 21:57:26</publishTime>
+    </File>
+    <File Include="app/factories/applicationLifeTimeService.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/factories/applicationLifeTimeService.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/DummyModel.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/DummyModel.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/Language.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/Language.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/RejectMessage.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/models/RejectMessage.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/components/help/helpResources.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/components/help/helpResources.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/components/home/homeResources.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/components/home/homeResources.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/directives/navigation/navigationResources.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/directives/navigation/navigationResources.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/errors/errorResources.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/resources/errors/errorResources.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/services/dummyService.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/services/dummyService.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/services/logService.js">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/services/logService.js.map">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="app/_app.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="app/_app.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="bin/HomeSchoolWeb.dll">
+      <publishTime>02/23/2017 22:12:13</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>02/23/2017 21:36:50</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/23/2017 12:42:28</publishTime>
+    </File>
+    <File Include="images/1487872027_Home.png">
+      <publishTime>02/23/2017 12:47:07</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/bootstrap-theme.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/bootstrap-theme.min.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/bootstrap.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/bootstrap.min.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/loading-bar.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/loading-bar.min.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/ngToast-animations.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/ngToast-animations.min.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/ngToast.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/ngToast.min.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/css/ui-bootstrap-csp.css">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/angular-animate.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/angular-messages.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/angular-sanitize.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/angular-ui-router.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/angular.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/bootbox.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/bootstrap.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/es6-shim.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/jquery.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/json3.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/loading-bar.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/ngToast.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/q.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/smart-table.min.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/ui-bootstrap-tpls.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="nodes/js/ui-bootstrap.js">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/23/2017 12:31:29</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/23/2017 22:12:14</publishTime>
+    </File>
+    <File Include="Scripts/typings/angular-dateparser/DateParser.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="Scripts/typings/angular-dateparser/DateParser.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="Scripts/typings/angular-dateparser/DateParserDirective.js">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="Scripts/typings/angular-dateparser/DateParserDirective.js.map">
+      <publishTime>02/23/2017 22:12:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/23/2017 13:23:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
