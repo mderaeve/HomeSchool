@@ -1,9 +1,9 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Factories {
-    import C = BDO.Common;
-    import M = BDO.HomeSchoolWeb.Models;
-    import S = BDO.HomeSchoolWeb.Services;
+module Home.HomeSchoolWeb.Factories {
+    import C = Home.Common;
+    import M = Home.HomeSchoolWeb.Models;
+    import S = Home.HomeSchoolWeb.Services;
 
     export interface IApplicationLifeTimeService {
         getApplicationLanguage: () => M.ILanguage;
@@ -54,6 +54,6 @@ module BDO.HomeSchoolWeb.Factories {
         }
     }
 
-    app.factory(BDO.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id,
-        ['$filter', S.LogService.id, BDO.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
+    app.factory(Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id,
+        ['$filter', S.LogService.id, Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
 }

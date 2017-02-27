@@ -1,6 +1,6 @@
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Services;
@@ -26,9 +26,8 @@ var BDO;
                 return LocalStorageService;
             }());
             Services.LocalStorageService = LocalStorageService;
-            angular.module('bdo.localstorage', [])
-                .service(BDO.Common.Services.LocalStorageService.id, BDO.Common.Services.LocalStorageService);
+            angular.module('home.localstorage', [])
+                .service(Home.Common.Services.LocalStorageService.id, Home.Common.Services.LocalStorageService);
         })(Services = Common.Services || (Common.Services = {}));
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=localStorageService.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

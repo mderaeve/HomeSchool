@@ -1,5 +1,5 @@
 ﻿'use strict';
-module BDO.Common.Resources {
+module Home.Common.Resources {
     export interface IResourceConfiguration {
         preferredLanguage: string;
         addResource: (resource: ResourceBase) => void;
@@ -119,6 +119,6 @@ module BDO.Common.Resources {
         }
     }
 
-    angular.module('bdo.resources', [])
+    angular.module('home.resources', [])
         .provider(ResourceProvider.id, ResourceProvider);
 }

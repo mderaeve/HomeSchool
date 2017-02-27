@@ -1,5 +1,5 @@
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Models;
@@ -15,6 +15,5 @@ var BDO;
             }());
             Models.RejectMessage = RejectMessage;
         })(Models = HomeSchoolWeb.Models || (HomeSchoolWeb.Models = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=RejectMessage.js.map
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));

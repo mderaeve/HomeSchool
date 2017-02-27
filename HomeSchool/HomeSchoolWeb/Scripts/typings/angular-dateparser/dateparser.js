@@ -334,4 +334,3 @@ var NgDateParser;
     angular.module('dateParser', [])
         .provider('$dateParser', DateParser);
 })(NgDateParser || (NgDateParser = {}));
-//# sourceMappingURL=dateparser.js.map

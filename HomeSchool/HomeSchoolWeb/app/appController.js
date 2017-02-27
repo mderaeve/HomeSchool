@@ -1,13 +1,13 @@
 /// <reference path="_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Controllers;
         (function (Controllers) {
-            var C = BDO.Common;
-            var F = BDO.HomeSchoolWeb.Factories;
+            var C = Home.Common;
+            var F = Home.HomeSchoolWeb.Factories;
             var AppController = (function () {
                 function AppController($stateParams, resourceSvc, localStorageSvc, appLTSvc) {
                     this.$stateParams = $stateParams;
@@ -44,8 +44,7 @@ var BDO;
                 return AppController;
             }());
             Controllers.AppController = AppController;
-            HomeSchoolWeb.app.controller(BDO.HomeSchoolWeb.Controllers.AppController.id, BDO.HomeSchoolWeb.Controllers.AppController);
+            HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.AppController.id, Home.HomeSchoolWeb.Controllers.AppController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=appController.js.map
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));

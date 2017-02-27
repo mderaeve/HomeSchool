@@ -1,8 +1,8 @@
 ﻿/// <reference path="_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Controllers {
-    import C = BDO.Common;
-    import F = BDO.HomeSchoolWeb.Factories;
+module Home.HomeSchoolWeb.Controllers {
+    import C = Home.Common;
+    import F = Home.HomeSchoolWeb.Factories;
 
     export class AppController {
         static $inject: Array<string> = ['$stateParams', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
@@ -49,5 +49,5 @@ module BDO.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(BDO.HomeSchoolWeb.Controllers.AppController.id, BDO.HomeSchoolWeb.Controllers.AppController);
+    app.controller(Home.HomeSchoolWeb.Controllers.AppController.id, Home.HomeSchoolWeb.Controllers.AppController);
 }

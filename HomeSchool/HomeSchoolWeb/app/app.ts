@@ -1,7 +1,7 @@
 ﻿/// <reference path="_app.ts" />
 
-module BDO.HomeSchoolWeb {
-    export var app = angular.module("HomeSchoolWebApp", ['ui.router', 'smart-table', 'ui.bootstrap', 'angular-loading-bar', 'ngMessages', 'ngToast', 'bdo.resources', 'bdo.localstorage']);
+module Home.HomeSchoolWeb {
+    export var app = angular.module("HomeSchoolWebApp", ['ui.router', 'smart-table', 'ui.bootstrap', 'angular-loading-bar', 'ngMessages', 'ngToast', 'home.resources', 'home.localstorage']);
 
     export class Config {
         static $inject: string[] = ["$stateProvider", "$urlRouterProvider"];
@@ -15,21 +15,28 @@ module BDO.HomeSchoolWeb {
                     abstract: true,
                     url: '/app/:nav',
                     templateUrl: '/app/app.html',
-                    controller: BDO.HomeSchoolWeb.Controllers.AppController.id,
+                    controller: Home.HomeSchoolWeb.Controllers.AppController.id,
                     controllerAs: 'vm'
                 })
 
                 .state('app.home', {
                     url: '/home/:applicationId',
                     templateUrl: '/app/components/home/homeView.html',
-                    controller: BDO.HomeSchoolWeb.Controllers.HomeController.id,
+                    controller: Home.HomeSchoolWeb.Controllers.HomeController.id,
+                    controllerAs: 'vm'
+                })
+
+                .state('app.tablesgame', {
+                    url: '/games/tablesgame',
+                    templateUrl: '/app/components/math/tables/tablesView.html',
+                    controller: Home.HomeSchoolWeb.Controllers.Games.TableGameController.id,
                     controllerAs: 'vm'
                 })
 
                 .state('app.help', {
                     url: '/help',
                     templateUrl: '/app/components/help/helpView.html',
-                    controller: BDO.HomeSchoolWeb.Controllers.HelpController.id,
+                    controller: Home.HomeSchoolWeb.Controllers.HelpController.id,
                     controllerAs: 'vm'
                 });
         }
@@ -37,13 +44,14 @@ module BDO.HomeSchoolWeb {
     app.config(Config);
 
 
-    app.config((resourceServiceProvider: BDO.Common.Resources.ResourceProvider) => {
-        let resourceConfig: BDO.Common.Resources.IResourceConfiguration = new BDO.Common.Resources.ResourceConfiguration();
+    app.config((resourceServiceProvider: Home.Common.Resources.ResourceProvider) => {
+        let resourceConfig: Home.Common.Resources.IResourceConfiguration = new Home.Common.Resources.ResourceConfiguration();
         resourceConfig.preferredLanguage = 'en'; //is the default setting (could be omitted here)
-        resourceConfig.addResource(new BDO.HomeSchoolWeb.Resources.HelpResources());
-        resourceConfig.addResource(new BDO.HomeSchoolWeb.Resources.HomeResources());
-        resourceConfig.addResource(new BDO.HomeSchoolWeb.Resources.NavigationResources());
-        resourceConfig.addResource(new BDO.HomeSchoolWeb.Resources.ErrorResources());
+        resourceConfig.addResource(new Home.HomeSchoolWeb.Resources.HelpResources());
+        resourceConfig.addResource(new Home.HomeSchoolWeb.Resources.HomeResources());
+        resourceConfig.addResource(new Home.HomeSchoolWeb.Resources.NavigationResources());
+        resourceConfig.addResource(new Home.HomeSchoolWeb.Resources.ErrorResources());
+        resourceConfig.addResource(new Home.HomeSchoolWeb.Resources.GamesResources());
         resourceServiceProvider.config(resourceConfig);
     });
     app.config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {

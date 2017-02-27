@@ -1,5 +1,5 @@
 ﻿'use strict';
-module BDO.Common {
+module Home.Common {
     export class List<T extends any>{
         private _values: Array<T> = [];
 

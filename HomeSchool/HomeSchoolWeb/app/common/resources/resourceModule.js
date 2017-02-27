@@ -1,6 +1,6 @@
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Resources;
@@ -97,9 +97,8 @@ var BDO;
                 return ResourceProvider;
             }());
             Resources.ResourceProvider = ResourceProvider;
-            angular.module('bdo.resources', [])
+            angular.module('home.resources', [])
                 .provider(ResourceProvider.id, ResourceProvider);
         })(Resources = Common.Resources || (Common.Resources = {}));
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=resourceModule.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

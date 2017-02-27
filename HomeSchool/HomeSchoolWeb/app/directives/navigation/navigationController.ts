@@ -1,11 +1,11 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
 
-module BDO.HomeSchoolWeb.Controllers {
-    import C = BDO.Common;
-    import F = BDO.HomeSchoolWeb.Factories;
-    import M = BDO.HomeSchoolWeb.Models;
-    import S = BDO.HomeSchoolWeb.Services;
+module Home.HomeSchoolWeb.Controllers {
+    import C = Home.Common;
+    import F = Home.HomeSchoolWeb.Factories;
+    import M = Home.HomeSchoolWeb.Models;
+    import S = Home.HomeSchoolWeb.Services;
 
     export class NavigationController {
         static $inject: string[] = [C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
@@ -46,5 +46,5 @@ module BDO.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(BDO.HomeSchoolWeb.Controllers.NavigationController.id, BDO.HomeSchoolWeb.Controllers.NavigationController);
+    app.controller(Home.HomeSchoolWeb.Controllers.NavigationController.id, Home.HomeSchoolWeb.Controllers.NavigationController);
 }

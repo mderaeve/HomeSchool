@@ -1,5 +1,5 @@
 ﻿'use strict';
-module BDO.HomeSchoolWeb.Models {
+module Home.HomeSchoolWeb.Models {
     export interface ILanguage {
         Id: number;
         Code: string;

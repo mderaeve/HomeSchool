@@ -21,8 +21,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Dictionary = (function () {
@@ -123,6 +123,5 @@ var BDO;
             return Dictionary;
         }());
         Common.Dictionary = Dictionary;
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=dictionary.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

@@ -1,5 +1,5 @@
-﻿module BDO.HomeSchoolWeb.Resources {
-    import C = BDO.Common;
+﻿module Home.HomeSchoolWeb.Resources {
+    import C = Home.Common;
 
     export class ErrorResources extends C.Resources.ResourceBase {
         protected setLanguageDictionary(): void {

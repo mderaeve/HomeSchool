@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-module BDO.Common {
+module Home.Common {
     export class Dictionary<T extends number | string, U extends any>{
         private _keys: T[] = [];
         private _values: U[] = [];

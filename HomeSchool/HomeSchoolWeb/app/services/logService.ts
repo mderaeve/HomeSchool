@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Services {
+module Home.HomeSchoolWeb.Services {
     export interface ILogService {
         log: (msg: string) => void;
     }
@@ -17,5 +17,5 @@ module BDO.HomeSchoolWeb.Services {
         }
     }
 
-    app.service(BDO.HomeSchoolWeb.Services.LogService.id, BDO.HomeSchoolWeb.Services.LogService);
+    app.service(Home.HomeSchoolWeb.Services.LogService.id, Home.HomeSchoolWeb.Services.LogService);
 }

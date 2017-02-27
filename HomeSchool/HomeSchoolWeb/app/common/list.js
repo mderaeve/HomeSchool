@@ -1,6 +1,6 @@
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var List = (function () {
@@ -48,6 +48,5 @@ var BDO;
             return List;
         }());
         Common.List = List;
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=list.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

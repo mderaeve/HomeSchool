@@ -1,4 +1,4 @@
-﻿module BDO.HomeSchoolWeb.Models {
+﻿module Home.HomeSchoolWeb.Models {
 
     export interface IDummyModel {
 

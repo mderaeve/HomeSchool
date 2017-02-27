@@ -1,13 +1,13 @@
 /// <reference path="../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Services;
         (function (Services) {
-            var C = BDO.Common;
-            var M = BDO.HomeSchoolWeb.Models;
+            var C = Home.Common;
+            var M = Home.HomeSchoolWeb.Models;
             var DummyService = (function () {
                 function DummyService($http, $filter, logService) {
                     this.$http = $http;
@@ -38,8 +38,7 @@ var BDO;
                 return DummyService;
             }());
             Services.DummyService = DummyService;
-            HomeSchoolWeb.app.service(BDO.HomeSchoolWeb.Services.DummyService.id, BDO.HomeSchoolWeb.Services.DummyService);
+            HomeSchoolWeb.app.service(Home.HomeSchoolWeb.Services.DummyService.id, Home.HomeSchoolWeb.Services.DummyService);
         })(Services = HomeSchoolWeb.Services || (HomeSchoolWeb.Services = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=dummyService.js.map
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));

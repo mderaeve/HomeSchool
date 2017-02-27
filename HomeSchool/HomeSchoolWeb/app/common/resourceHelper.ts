@@ -1,4 +1,4 @@
-﻿module BDO.Common.Resources {
+﻿module Home.Common.Resources {
     export interface IResourceHelper {
         getLocalResource(resourceId: string): string;
     }
@@ -12,7 +12,7 @@
 
         getLocalResource(resourceId: string): string {
             const self = this;
-            return BDO.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
+            return Home.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
         }
     }
 }

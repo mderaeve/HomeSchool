@@ -1,5 +1,5 @@
 ﻿'use strict';
-module BDO.Common.Services {
+module Home.Common.Services {
     export interface ILocalStorageService {
         getItem: (key: string) => string;
         setItem: (pair: KeyValuePair<string, string>) => void;
@@ -28,6 +28,6 @@ module BDO.Common.Services {
         }
     }
 
-    angular.module('bdo.localstorage', [])
-        .service(BDO.Common.Services.LocalStorageService.id, BDO.Common.Services.LocalStorageService);
+    angular.module('home.localstorage', [])
+        .service(Home.Common.Services.LocalStorageService.id, Home.Common.Services.LocalStorageService);
 }

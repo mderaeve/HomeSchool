@@ -1,7 +1,7 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Controllers {
-    import C = BDO.Common;
+module Home.HomeSchoolWeb.Controllers {
+    import C = Home.Common;
 
     export class HelpController {
         static $inject: string[] = [C.Resources.ResourceProvider.id];
@@ -18,5 +18,5 @@ module BDO.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(BDO.HomeSchoolWeb.Controllers.HelpController.id, BDO.HomeSchoolWeb.Controllers.HelpController);
+    app.controller(Home.HomeSchoolWeb.Controllers.HelpController.id, Home.HomeSchoolWeb.Controllers.HelpController);
 }

@@ -1,7 +1,7 @@
 /// <reference path="../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Configuration;
@@ -29,6 +29,5 @@ var BDO;
             }());
             Configuration.LocalStorageKeys = LocalStorageKeys;
         })(Configuration = Common.Configuration || (Common.Configuration = {}));
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=configuration.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

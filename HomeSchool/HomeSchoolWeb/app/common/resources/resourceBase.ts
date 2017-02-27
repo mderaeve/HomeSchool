@@ -1,7 +1,7 @@
 ﻿'use strict';
 //Structure of the resource files is as follows:
-//module BDO.BudgetTool.Resources {
-//    import C = BDO.Common;
+//module Home.BudgetTool.Resources {
+//    import C = Home.Common;
 
 //    export class ComponentResources extends C.Resources.ResourceBase {
 //        protected setLanguageDictionary(): void {
@@ -25,7 +25,7 @@
 //        }
 //    }
 //}
-module BDO.Common.Resources {
+module Home.Common.Resources {
     export abstract class ResourceBase {
         protected resourceName: string;
         protected languageDictionary: Dictionary<string, Dictionary<string, string>> = null;

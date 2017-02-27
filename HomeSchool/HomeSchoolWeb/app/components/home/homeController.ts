@@ -1,10 +1,10 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Controllers {
-    import C = BDO.Common;
-    import F = BDO.HomeSchoolWeb.Factories;
-    import M = BDO.HomeSchoolWeb.Models;
-    import S = BDO.HomeSchoolWeb.Services;
+module Home.HomeSchoolWeb.Controllers {
+    import C = Home.Common;
+    import F = Home.HomeSchoolWeb.Factories;
+    import M = Home.HomeSchoolWeb.Models;
+    import S = Home.HomeSchoolWeb.Services;
 
     export interface IHomeController {
 
@@ -42,5 +42,5 @@ module BDO.HomeSchoolWeb.Controllers {
 
     }
 
-    app.controller(BDO.HomeSchoolWeb.Controllers.HomeController.id, BDO.HomeSchoolWeb.Controllers.HomeController);
+    app.controller(Home.HomeSchoolWeb.Controllers.HomeController.id, Home.HomeSchoolWeb.Controllers.HomeController);
 }

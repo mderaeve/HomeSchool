@@ -68,7 +68,9 @@
   <ItemGroup>
     <Content Include="app\app.html" />
     <Content Include="app\components\help\helpView.html" />
+    <Content Include="app\components\home\buildView.html" />
     <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\components\math\tables\tablesView.html" />
     <Content Include="app\directives\navigation\navigationView.html" />
     <Content Include="css\custom.css" />
     <Content Include="favicon.ico" />
@@ -123,7 +125,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\components\math\" />
     <Folder Include="app\filters\" />
     <Folder Include="app\modals\" />
     <Folder Include="app\resources\modals\" />
@@ -140,13 +141,16 @@
     <TypeScriptCompile Include="app\common\resources\resourceBase.ts" />
     <TypeScriptCompile Include="app\common\resources\resourceModule.ts" />
     <TypeScriptCompile Include="app\components\help\helpController.ts" />
+    <TypeScriptCompile Include="app\components\home\buildController.ts" />
     <TypeScriptCompile Include="app\components\home\homeController.ts" />
+    <TypeScriptCompile Include="app\components\math\tables\tablesController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationDirective.ts" />
     <TypeScriptCompile Include="app\factories\applicationLifeTimeService.ts" />
     <TypeScriptCompile Include="app\models\DummyModel.ts" />
     <TypeScriptCompile Include="app\models\Language.ts" />
     <TypeScriptCompile Include="app\models\RejectMessage.ts" />
+    <TypeScriptCompile Include="app\resources\components\games\gamesResources.ts" />
     <TypeScriptCompile Include="app\resources\directives\navigation\navigationResources.ts" />
     <TypeScriptCompile Include="app\resources\errors\errorResources.ts" />
     <TypeScriptCompile Include="app\resources\components\help\helpResources.ts" />

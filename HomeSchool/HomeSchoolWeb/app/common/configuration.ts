@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module BDO.Common.Configuration {
+module Home.Common.Configuration {
     export class AppConfig {
         static serviceBaseUrl: string = 'http://localhost/';
     }

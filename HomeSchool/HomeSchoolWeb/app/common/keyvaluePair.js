@@ -1,6 +1,6 @@
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var KeyValuePair = (function () {
@@ -11,6 +11,5 @@ var BDO;
             return KeyValuePair;
         }());
         Common.KeyValuePair = KeyValuePair;
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
-//# sourceMappingURL=keyvaluePair.js.map
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));

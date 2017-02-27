@@ -1,8 +1,8 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module BDO.HomeSchoolWeb.Services {
-    import C = BDO.Common;
-    import M = BDO.HomeSchoolWeb.Models;
+module Home.HomeSchoolWeb.Services {
+    import C = Home.Common;
+    import M = Home.HomeSchoolWeb.Models;
 
     export interface IDummyService {
         apiGetSample: () => ng.IPromise<Array<any>>;
@@ -48,5 +48,5 @@ module BDO.HomeSchoolWeb.Services {
         }
     }
 
-    app.service(BDO.HomeSchoolWeb.Services.DummyService.id, BDO.HomeSchoolWeb.Services.DummyService);
+    app.service(Home.HomeSchoolWeb.Services.DummyService.id, Home.HomeSchoolWeb.Services.DummyService);
 }
