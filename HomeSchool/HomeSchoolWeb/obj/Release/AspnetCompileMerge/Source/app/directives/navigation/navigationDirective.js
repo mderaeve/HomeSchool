@@ -1,7 +1,7 @@
 /// <reference path="../../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Directives;
@@ -12,7 +12,7 @@ var BDO;
                     restrict: 'E',
                     scope: {},
                     replace: true,
-                    controller: BDO.HomeSchoolWeb.Controllers.NavigationController.id,
+                    controller: Home.HomeSchoolWeb.Controllers.NavigationController.id,
                     controllerAs: 'vm',
                     bindToController: {
                         navigationVisible: '=navVisible'
@@ -20,8 +20,8 @@ var BDO;
                 };
             }
             Directives.Navigation = Navigation;
-            HomeSchoolWeb.app.directive('navigation', BDO.HomeSchoolWeb.Directives.Navigation);
+            HomeSchoolWeb.app.directive('navigation', Home.HomeSchoolWeb.Directives.Navigation);
         })(Directives = HomeSchoolWeb.Directives || (HomeSchoolWeb.Directives = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=navigationDirective.js.map

@@ -3,13 +3,13 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Resources;
         (function (Resources) {
-            var C = BDO.Common;
+            var C = Home.Common;
             var NavigationResources = (function (_super) {
                 __extends(NavigationResources, _super);
                 function NavigationResources() {
@@ -45,6 +45,6 @@ var BDO;
             }(C.Resources.ResourceBase));
             Resources.NavigationResources = NavigationResources;
         })(Resources = HomeSchoolWeb.Resources || (HomeSchoolWeb.Resources = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=navigationResources.js.map

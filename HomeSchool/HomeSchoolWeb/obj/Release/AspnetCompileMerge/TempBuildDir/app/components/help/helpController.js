@@ -1,12 +1,12 @@
 /// <reference path="../../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Controllers;
         (function (Controllers) {
-            var C = BDO.Common;
+            var C = Home.Common;
             var HelpController = (function () {
                 function HelpController(resourceSvc) {
                     this.resourceSvc = resourceSvc;
@@ -20,8 +20,8 @@ var BDO;
                 return HelpController;
             }());
             Controllers.HelpController = HelpController;
-            HomeSchoolWeb.app.controller(BDO.HomeSchoolWeb.Controllers.HelpController.id, BDO.HomeSchoolWeb.Controllers.HelpController);
+            HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.HelpController.id, Home.HomeSchoolWeb.Controllers.HelpController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=helpController.js.map

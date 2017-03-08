@@ -1,13 +1,13 @@
 /// <reference path="../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Factories;
         (function (Factories) {
-            var C = BDO.Common;
-            var S = BDO.HomeSchoolWeb.Services;
+            var C = Home.Common;
+            var S = Home.HomeSchoolWeb.Services;
             var ApplicationLifeTimeService = (function () {
                 function ApplicationLifeTimeService($filter, logSvc) {
                     this.$filter = $filter;
@@ -46,8 +46,8 @@ var BDO;
                 return ApplicationLifeTimeService;
             }());
             Factories.ApplicationLifeTimeService = ApplicationLifeTimeService;
-            HomeSchoolWeb.app.factory(BDO.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id, ['$filter', S.LogService.id, BDO.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
+            HomeSchoolWeb.app.factory(Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id, ['$filter', S.LogService.id, Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
         })(Factories = HomeSchoolWeb.Factories || (HomeSchoolWeb.Factories = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=applicationLifeTimeService.js.map

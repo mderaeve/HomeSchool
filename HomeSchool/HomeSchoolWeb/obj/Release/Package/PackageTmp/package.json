@@ -1,7 +1,7 @@
 {
   "name": "TemplateTool",
   "version": "1.0.0",
-  "description": "Project solely for the purpose of creating a template for BDO angular projects.",
+  "description": "Project solely for the purpose of creating a template for Home angular projects.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "Template",
     "Tool"
   ],
-  "author": "BDO",
+  "author": "Home",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.x",

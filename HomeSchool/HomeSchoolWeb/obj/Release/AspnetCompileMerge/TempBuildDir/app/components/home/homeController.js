@@ -1,14 +1,14 @@
 /// <reference path="../../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Controllers;
         (function (Controllers) {
-            var C = BDO.Common;
-            var F = BDO.HomeSchoolWeb.Factories;
-            var S = BDO.HomeSchoolWeb.Services;
+            var C = Home.Common;
+            var F = Home.HomeSchoolWeb.Factories;
+            var S = Home.HomeSchoolWeb.Services;
             var HomeController = (function () {
                 function HomeController($state, $timeout, ngToast, resourceSvc, appLTSvc, logSvc, dummySvc) {
                     this.$state = $state;
@@ -35,8 +35,8 @@ var BDO;
                 return HomeController;
             }());
             Controllers.HomeController = HomeController;
-            HomeSchoolWeb.app.controller(BDO.HomeSchoolWeb.Controllers.HomeController.id, BDO.HomeSchoolWeb.Controllers.HomeController);
+            HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.HomeController.id, Home.HomeSchoolWeb.Controllers.HomeController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=homeController.js.map

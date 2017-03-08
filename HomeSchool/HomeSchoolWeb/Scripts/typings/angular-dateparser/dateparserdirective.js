@@ -53,3 +53,4 @@ var NgDateParser;
     angular.module('dateParser')
         .directive('dateParser', DateParserDirective.factory());
 })(NgDateParser || (NgDateParser = {}));
+//# sourceMappingURL=dateparserdirective.js.map

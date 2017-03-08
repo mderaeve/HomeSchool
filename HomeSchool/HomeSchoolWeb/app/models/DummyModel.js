@@ -17,3 +17,4 @@ var Home;
         })(Models = HomeSchoolWeb.Models || (HomeSchoolWeb.Models = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=DummyModel.js.map

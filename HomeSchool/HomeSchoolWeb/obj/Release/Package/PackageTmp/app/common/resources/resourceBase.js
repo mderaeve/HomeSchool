@@ -1,7 +1,7 @@
 'use strict';
 //Structure of the resource files is as follows:
-//module BDO.BudgetTool.Resources {
-//    import C = BDO.Common;
+//module Home.BudgetTool.Resources {
+//    import C = Home.Common;
 //    export class ComponentResources extends C.Resources.ResourceBase {
 //        protected setLanguageDictionary(): void {
 //            const self = this;
@@ -21,8 +21,8 @@
 //        }
 //    }
 //}
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Resources;
@@ -58,6 +58,6 @@ var BDO;
             }());
             Resources.ResourceBase = ResourceBase;
         })(Resources = Common.Resources || (Common.Resources = {}));
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=resourceBase.js.map

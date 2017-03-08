@@ -1,5 +1,5 @@
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var Common;
     (function (Common) {
         var Resources;
@@ -11,12 +11,12 @@ var BDO;
                 }
                 ResourceHelper.prototype.getLocalResource = function (resourceId) {
                     var self = this;
-                    return BDO.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
+                    return Home.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
                 };
                 return ResourceHelper;
             }());
             Resources.ResourceHelper = ResourceHelper;
         })(Resources = Common.Resources || (Common.Resources = {}));
-    })(Common = BDO.Common || (BDO.Common = {}));
-})(BDO || (BDO = {}));
+    })(Common = Home.Common || (Home.Common = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=resourceHelper.js.map

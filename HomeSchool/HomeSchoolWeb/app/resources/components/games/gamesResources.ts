@@ -5,11 +5,13 @@
         protected setLanguageDictionary(): void {
             const self = this;
             let Translations_en: Array<C.KeyValuePair<string, string>> = [
-                { key: 'tablesTitle', value: 'Practice tables' }
+                { key: 'tablesTitle', value: 'Practice tables' },
+                { key: 'hundredFieldTitle', value: 'Practice the 100 field'}
             ];
 
             let Translations_nl: Array<C.KeyValuePair<string, string>> = [
-                { key: 'tablesTitle', value: 'Tafels oefenen' }
+                { key: 'tablesTitle', value: 'Tafels oefenen' },
+                { key: 'hundredFieldTitle', value: 'Oefen het 100 veld' }
             ];
 
             self.languageDictionary = new C.Dictionary<string, C.Dictionary<string, string>>([

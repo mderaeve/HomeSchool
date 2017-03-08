@@ -21,3 +21,4 @@ var Home;
         })(Services = HomeSchoolWeb.Services || (HomeSchoolWeb.Services = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=logService.js.map

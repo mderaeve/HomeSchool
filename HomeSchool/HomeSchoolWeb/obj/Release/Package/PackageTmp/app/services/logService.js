@@ -1,7 +1,7 @@
 /// <reference path="../_app.ts" />
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Services;
@@ -17,8 +17,8 @@ var BDO;
                 return LogService;
             }());
             Services.LogService = LogService;
-            HomeSchoolWeb.app.service(BDO.HomeSchoolWeb.Services.LogService.id, BDO.HomeSchoolWeb.Services.LogService);
+            HomeSchoolWeb.app.service(Home.HomeSchoolWeb.Services.LogService.id, Home.HomeSchoolWeb.Services.LogService);
         })(Services = HomeSchoolWeb.Services || (HomeSchoolWeb.Services = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=logService.js.map

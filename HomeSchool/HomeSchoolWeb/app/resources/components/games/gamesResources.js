@@ -18,10 +18,12 @@ var Home;
                 GamesResources.prototype.setLanguageDictionary = function () {
                     var self = this;
                     var Translations_en = [
-                        { key: 'tablesTitle', value: 'Practice tables' }
+                        { key: 'tablesTitle', value: 'Practice tables' },
+                        { key: 'hundredFieldTitle', value: 'Practice the 100 field' }
                     ];
                     var Translations_nl = [
-                        { key: 'tablesTitle', value: 'Tafels oefenen' }
+                        { key: 'tablesTitle', value: 'Tafels oefenen' },
+                        { key: 'hundredFieldTitle', value: 'Oefen het 100 veld' }
                     ];
                     self.languageDictionary = new C.Dictionary([
                         { key: 'en', value: new C.Dictionary(Translations_en) },
@@ -35,3 +37,4 @@ var Home;
         })(Resources = HomeSchoolWeb.Resources || (HomeSchoolWeb.Resources = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=gamesResources.js.map

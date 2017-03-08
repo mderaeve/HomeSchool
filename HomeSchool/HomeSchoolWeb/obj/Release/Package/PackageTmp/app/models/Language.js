@@ -1,6 +1,6 @@
 'use strict';
-var BDO;
-(function (BDO) {
+var Home;
+(function (Home) {
     var HomeSchoolWeb;
     (function (HomeSchoolWeb) {
         var Models;
@@ -17,6 +17,6 @@ var BDO;
             }());
             Models.Language = Language;
         })(Models = HomeSchoolWeb.Models || (HomeSchoolWeb.Models = {}));
-    })(HomeSchoolWeb = BDO.HomeSchoolWeb || (BDO.HomeSchoolWeb = {}));
-})(BDO || (BDO = {}));
+    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
+})(Home || (Home = {}));
 //# sourceMappingURL=Language.js.map

@@ -24,3 +24,4 @@ var Home;
         })(Directives = HomeSchoolWeb.Directives || (HomeSchoolWeb.Directives = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=navigationDirective.js.map

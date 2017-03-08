@@ -39,3 +39,4 @@ var Home;
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=homeController.js.map

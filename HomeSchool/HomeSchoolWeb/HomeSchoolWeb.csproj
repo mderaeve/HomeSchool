@@ -70,6 +70,7 @@
     <Content Include="app\components\help\helpView.html" />
     <Content Include="app\components\home\buildView.html" />
     <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\components\math\hundredfield\hundredfieldView.html" />
     <Content Include="app\components\math\tables\tablesView.html" />
     <Content Include="app\directives\navigation\navigationView.html" />
     <Content Include="css\custom.css" />
@@ -110,6 +111,7 @@
     <Content Include="nodes\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="nodes\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="nodes\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\HomeCustom.scss" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -143,6 +145,7 @@
     <TypeScriptCompile Include="app\components\help\helpController.ts" />
     <TypeScriptCompile Include="app\components\home\buildController.ts" />
     <TypeScriptCompile Include="app\components\home\homeController.ts" />
+    <TypeScriptCompile Include="app\components\math\hundredfield\hundredfieldController.ts" />
     <TypeScriptCompile Include="app\components\math\tables\tablesController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationDirective.ts" />

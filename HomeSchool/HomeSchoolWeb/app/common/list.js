@@ -50,3 +50,4 @@ var Home;
         Common.List = List;
     })(Common = Home.Common || (Home.Common = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=list.js.map

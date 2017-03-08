@@ -47,3 +47,4 @@ var Home;
         })(Resources = HomeSchoolWeb.Resources || (HomeSchoolWeb.Resources = {}));
     })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
 })(Home || (Home = {}));
+//# sourceMappingURL=navigationResources.js.map
