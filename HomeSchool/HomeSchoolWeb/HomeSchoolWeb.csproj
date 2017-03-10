@@ -152,6 +152,7 @@
     <TypeScriptCompile Include="app\factories\applicationLifeTimeService.ts" />
     <TypeScriptCompile Include="app\models\DummyModel.ts" />
     <TypeScriptCompile Include="app\models\Language.ts" />
+    <TypeScriptCompile Include="app\models\math\tableExercise.ts" />
     <TypeScriptCompile Include="app\models\RejectMessage.ts" />
     <TypeScriptCompile Include="app\resources\components\games\gamesResources.ts" />
     <TypeScriptCompile Include="app\resources\directives\navigation\navigationResources.ts" />

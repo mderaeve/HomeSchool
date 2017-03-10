@@ -1,5 +1,5 @@
 ﻿'use strict';
-module Home.HomeSchoolWeb.Models {
+module Home.Models {
     export interface ILanguage {
         Id: number;
         Code: string;

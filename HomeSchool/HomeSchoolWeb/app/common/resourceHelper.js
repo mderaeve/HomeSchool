@@ -11,7 +11,7 @@ var Home;
                 }
                 ResourceHelper.prototype.getLocalResource = function (resourceId) {
                     var self = this;
-                    return Home.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
+                    return Home.Resources[self._resourceClass].Messages[resourceId];
                 };
                 return ResourceHelper;
             }());

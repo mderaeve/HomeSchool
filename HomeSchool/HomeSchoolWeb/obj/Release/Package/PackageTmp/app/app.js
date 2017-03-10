@@ -27,6 +27,12 @@ var Home;
                     controller: Home.HomeSchoolWeb.Controllers.Games.TableGameController.id,
                     controllerAs: 'vm'
                 })
+                    .state('app.hundredfieldgame', {
+                    url: '/games/hundredfieldgame',
+                    templateUrl: '/app/components/math/hundredfield/hundredfieldView.html',
+                    controller: Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController.id,
+                    controllerAs: 'vm'
+                })
                     .state('app.help', {
                     url: '/help',
                     templateUrl: '/app/components/help/helpView.html',

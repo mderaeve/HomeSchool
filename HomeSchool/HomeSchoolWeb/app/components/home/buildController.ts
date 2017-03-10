@@ -1,10 +1,10 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Controllers {
+module Home.Controllers {
     import C = Home.Common;
-    import F = Home.HomeSchoolWeb.Factories;
-    import M = Home.HomeSchoolWeb.Models;
-    import S = Home.HomeSchoolWeb.Services;
+    import F = Home.Factories;
+    import M = Home.Models;
+    import S = Home.Services;
 
     export interface IBuildController {
 
@@ -36,5 +36,5 @@ module Home.HomeSchoolWeb.Controllers {
 
     }
 
-    app.controller(Home.HomeSchoolWeb.Controllers.BuildController.id, Home.HomeSchoolWeb.Controllers.BuildController);
+    app.controller(Home.Controllers.BuildController.id, Home.Controllers.BuildController);
 }

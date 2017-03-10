@@ -1,9 +1,9 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Factories {
+module Home.Factories {
     import C = Home.Common;
-    import M = Home.HomeSchoolWeb.Models;
-    import S = Home.HomeSchoolWeb.Services;
+    import M = Home.Models;
+    import S = Home.Services;
 
     export interface IApplicationLifeTimeService {
         getApplicationLanguage: () => M.ILanguage;
@@ -54,6 +54,6 @@ module Home.HomeSchoolWeb.Factories {
         }
     }
 
-    app.factory(Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id,
-        ['$filter', S.LogService.id, Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
+    app.factory(Home.Factories.ApplicationLifeTimeService.id,
+        ['$filter', S.LogService.id, Home.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
 }

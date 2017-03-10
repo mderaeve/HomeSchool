@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Services {
+module Home.Services {
     export interface ILogService {
         log: (msg: string) => void;
     }
@@ -17,5 +17,5 @@ module Home.HomeSchoolWeb.Services {
         }
     }
 
-    app.service(Home.HomeSchoolWeb.Services.LogService.id, Home.HomeSchoolWeb.Services.LogService);
+    app.service(Home.Services.LogService.id, Home.Services.LogService);
 }

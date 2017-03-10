@@ -1,6 +1,6 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Controllers {
+module Home.Controllers {
     import C = Home.Common;
 
     export class HelpController {
@@ -18,5 +18,5 @@ module Home.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(Home.HomeSchoolWeb.Controllers.HelpController.id, Home.HomeSchoolWeb.Controllers.HelpController);
+    app.controller(Home.Controllers.HelpController.id, Home.Controllers.HelpController);
 }

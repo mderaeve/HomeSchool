@@ -12,7 +12,7 @@
 
         getLocalResource(resourceId: string): string {
             const self = this;
-            return Home.HomeSchoolWeb.Resources[self._resourceClass].Messages[resourceId];
+            return Home.Resources[self._resourceClass].Messages[resourceId];
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿/// <reference path="_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Controllers {
+module Home.Controllers {
     import C = Home.Common;
-    import F = Home.HomeSchoolWeb.Factories;
+    import F = Home.Factories;
 
     export class AppController {
         static $inject: Array<string> = ['$stateParams', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
@@ -49,5 +49,5 @@ module Home.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(Home.HomeSchoolWeb.Controllers.AppController.id, Home.HomeSchoolWeb.Controllers.AppController);
+    app.controller(Home.Controllers.AppController.id, Home.Controllers.AppController);
 }

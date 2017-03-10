@@ -1,6 +1,6 @@
 ﻿/// <reference path="../../../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Controllers.Games {
+module Home.Controllers.Games {
     import C = Home.Common;
 
     export class HundredFieldGameController {
@@ -18,5 +18,5 @@ module Home.HomeSchoolWeb.Controllers.Games {
         }
     }
 
-    app.controller(Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController.id, Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController);
+    app.controller(Home.Controllers.Games.HundredFieldGameController.id, Home.Controllers.Games.HundredFieldGameController);
 }

@@ -1,11 +1,11 @@
 ﻿/// <reference path="../../_app.ts" />
 'use strict';
 
-module Home.HomeSchoolWeb.Controllers {
+module Home.Controllers {
     import C = Home.Common;
-    import F = Home.HomeSchoolWeb.Factories;
-    import M = Home.HomeSchoolWeb.Models;
-    import S = Home.HomeSchoolWeb.Services;
+    import F = Home.Factories;
+    import M = Home.Models;
+    import S = Home.Services;
 
     export class NavigationController {
         static $inject: string[] = [C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
@@ -46,5 +46,5 @@ module Home.HomeSchoolWeb.Controllers {
         }
     }
 
-    app.controller(Home.HomeSchoolWeb.Controllers.NavigationController.id, Home.HomeSchoolWeb.Controllers.NavigationController);
+    app.controller(Home.Controllers.NavigationController.id, Home.Controllers.NavigationController);
 }

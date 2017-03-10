@@ -1,4 +1,4 @@
-﻿module Home.HomeSchoolWeb.Models {
+﻿module Home.Models {
 
     export interface IRejectMessage {
 

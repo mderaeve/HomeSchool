@@ -1,8 +1,8 @@
 ﻿/// <reference path="../_app.ts" />
 'use strict';
-module Home.HomeSchoolWeb.Services {
+module Home.Services {
     import C = Home.Common;
-    import M = Home.HomeSchoolWeb.Models;
+    import M = Home.Models;
 
     export interface IDummyService {
         apiGetSample: () => ng.IPromise<Array<any>>;
@@ -48,5 +48,5 @@ module Home.HomeSchoolWeb.Services {
         }
     }
 
-    app.service(Home.HomeSchoolWeb.Services.DummyService.id, Home.HomeSchoolWeb.Services.DummyService);
+    app.service(Home.Services.DummyService.id, Home.Services.DummyService);
 }

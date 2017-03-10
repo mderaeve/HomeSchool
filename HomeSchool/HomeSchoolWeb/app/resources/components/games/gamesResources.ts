@@ -1,4 +1,4 @@
-﻿module Home.HomeSchoolWeb.Resources {
+﻿module Home.Resources {
     import C = Home.Common;
 
     export class GamesResources extends C.Resources.ResourceBase {

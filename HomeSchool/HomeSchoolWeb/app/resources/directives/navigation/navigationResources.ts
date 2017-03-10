@@ -1,4 +1,4 @@
-﻿module Home.HomeSchoolWeb.Resources {
+﻿module Home.Resources {
     import C = Home.Common;
 
     export class NavigationResources extends C.Resources.ResourceBase {
