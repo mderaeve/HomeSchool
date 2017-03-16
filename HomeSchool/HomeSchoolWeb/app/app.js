@@ -40,9 +40,9 @@ var Home;
                     controllerAs: 'vm'
                 });
             }
-            Config.$inject = ["$stateProvider", "$urlRouterProvider"];
             return Config;
         }());
+        Config.$inject = ["$stateProvider", "$urlRouterProvider"];
         HomeSchoolWeb.Config = Config;
         HomeSchoolWeb.app.config(Config);
         HomeSchoolWeb.app.config(function (resourceServiceProvider) {

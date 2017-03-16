@@ -93,9 +93,9 @@ var Home;
                 ResourceProvider.prototype.$get = function () {
                     return this.$resourceService;
                 };
-                ResourceProvider.id = 'resourceService';
                 return ResourceProvider;
             }());
+            ResourceProvider.id = 'resourceService';
             Resources.ResourceProvider = ResourceProvider;
             angular.module('home.resources', [])
                 .provider(ResourceProvider.id, ResourceProvider);

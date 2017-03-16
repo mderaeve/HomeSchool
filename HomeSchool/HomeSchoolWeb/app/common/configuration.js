@@ -9,24 +9,24 @@ var Home;
             var AppConfig = (function () {
                 function AppConfig() {
                 }
-                AppConfig.serviceBaseUrl = 'http://localhost/';
                 return AppConfig;
             }());
+            AppConfig.serviceBaseUrl = 'http://localhost/';
             Configuration.AppConfig = AppConfig;
             var DefaultGridPagerConfig = (function () {
                 function DefaultGridPagerConfig() {
                 }
-                DefaultGridPagerConfig.pageSize = 20;
-                DefaultGridPagerConfig.pagesToShow = 5;
                 return DefaultGridPagerConfig;
             }());
+            DefaultGridPagerConfig.pageSize = 20;
+            DefaultGridPagerConfig.pagesToShow = 5;
             Configuration.DefaultGridPagerConfig = DefaultGridPagerConfig;
             var LocalStorageKeys = (function () {
                 function LocalStorageKeys() {
                 }
-                LocalStorageKeys.applicationLanguage = 'HomeSchoolWeb.applicationLanguage';
                 return LocalStorageKeys;
             }());
+            LocalStorageKeys.applicationLanguage = 'HomeSchoolWeb.applicationLanguage';
             Configuration.LocalStorageKeys = LocalStorageKeys;
         })(Configuration = Common.Configuration || (Common.Configuration = {}));
     })(Common = Home.Common || (Home.Common = {}));

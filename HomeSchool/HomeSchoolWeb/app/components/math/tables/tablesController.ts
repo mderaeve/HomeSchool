@@ -7,7 +7,8 @@ module Home.HomeSchoolWeb.Controllers.Games {
         static $inject: string[] = [C.Resources.ResourceProvider.id];
         static id: string = "tableGameController";
 
-        $resourceHelper: C.Resources.IResourceHelper;
+		$resourceHelper: C.Resources.IResourceHelper;
+
 
         constructor(private resourceSvc: C.Resources.IResourceService) {
             this.activate();

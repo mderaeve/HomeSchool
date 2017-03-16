@@ -17,10 +17,10 @@ var Home;
                     TableGameController.prototype.activate = function () {
                         var self = this;
                     };
-                    TableGameController.$inject = [C.Resources.ResourceProvider.id];
-                    TableGameController.id = "tableGameController";
                     return TableGameController;
                 }());
+                TableGameController.$inject = [C.Resources.ResourceProvider.id];
+                TableGameController.id = "tableGameController";
                 Games.TableGameController = TableGameController;
                 HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.Games.TableGameController.id, Home.HomeSchoolWeb.Controllers.Games.TableGameController);
             })(Games = Controllers.Games || (Controllers.Games = {}));

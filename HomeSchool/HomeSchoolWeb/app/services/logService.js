@@ -12,10 +12,10 @@ var Home;
                 LogService.prototype.log = function (msg) {
                     console.log(msg);
                 };
-                LogService.$inject = [];
-                LogService.id = "logService";
                 return LogService;
             }());
+            LogService.$inject = [];
+            LogService.id = "logService";
             Services.LogService = LogService;
             HomeSchoolWeb.app.service(Home.HomeSchoolWeb.Services.LogService.id, Home.HomeSchoolWeb.Services.LogService);
         })(Services = HomeSchoolWeb.Services || (HomeSchoolWeb.Services = {}));
