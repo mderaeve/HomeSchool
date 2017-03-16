@@ -30,10 +30,10 @@ var Home;
                     //    content: `<span>${self.resourceSvc.getLocalResource('Home.helloWorld')}</span>`
                     //});
                 };
-                HomeController.$inject = ['$state', '$timeout', 'ngToast', C.Resources.ResourceProvider.id, F.ApplicationLifeTimeService.id, S.LogService.id, S.DummyService.id];
-                HomeController.id = 'homeController';
                 return HomeController;
             }());
+            HomeController.$inject = ['$state', '$timeout', 'ngToast', C.Resources.ResourceProvider.id, F.ApplicationLifeTimeService.id, S.LogService.id, S.DummyService.id];
+            HomeController.id = 'homeController';
             Controllers.HomeController = HomeController;
             HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.HomeController.id, Home.HomeSchoolWeb.Controllers.HomeController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));

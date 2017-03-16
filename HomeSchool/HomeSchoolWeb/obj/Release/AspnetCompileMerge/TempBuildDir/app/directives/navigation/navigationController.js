@@ -33,10 +33,10 @@ var Home;
                     //Save the language in localstorage
                     self.setApplicationLanguageInStorage(self.language);
                 };
-                NavigationController.$inject = [C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
-                NavigationController.id = 'navigationController';
                 return NavigationController;
             }());
+            NavigationController.$inject = [C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
+            NavigationController.id = 'navigationController';
             Controllers.NavigationController = NavigationController;
             HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.NavigationController.id, Home.HomeSchoolWeb.Controllers.NavigationController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));

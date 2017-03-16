@@ -39,10 +39,10 @@ var Home;
                             self.navigationVisible = false;
                     }
                 };
-                AppController.$inject = ['$stateParams', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
-                AppController.id = 'appController';
                 return AppController;
             }());
+            AppController.$inject = ['$stateParams', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, F.ApplicationLifeTimeService.id];
+            AppController.id = 'appController';
             Controllers.AppController = AppController;
             HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.AppController.id, Home.HomeSchoolWeb.Controllers.AppController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));

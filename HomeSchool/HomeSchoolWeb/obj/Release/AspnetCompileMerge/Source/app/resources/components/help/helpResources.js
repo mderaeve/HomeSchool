@@ -13,7 +13,7 @@ var Home;
             var HelpResources = (function (_super) {
                 __extends(HelpResources, _super);
                 function HelpResources() {
-                    _super.call(this, 'Help');
+                    return _super.call(this, 'Help') || this;
                 }
                 HelpResources.prototype.setLanguageDictionary = function () {
                     var self = this;

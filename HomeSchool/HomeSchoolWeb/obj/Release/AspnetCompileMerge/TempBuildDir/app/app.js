@@ -27,6 +27,12 @@ var Home;
                     controller: Home.HomeSchoolWeb.Controllers.Games.TableGameController.id,
                     controllerAs: 'vm'
                 })
+                    .state('app.hundredfieldgame', {
+                    url: '/games/hundredfieldgame',
+                    templateUrl: '/app/components/math/hundredfield/hundredfieldView.html',
+                    controller: Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController.id,
+                    controllerAs: 'vm'
+                })
                     .state('app.help', {
                     url: '/help',
                     templateUrl: '/app/components/help/helpView.html',
@@ -34,9 +40,9 @@ var Home;
                     controllerAs: 'vm'
                 });
             }
-            Config.$inject = ["$stateProvider", "$urlRouterProvider"];
             return Config;
         }());
+        Config.$inject = ["$stateProvider", "$urlRouterProvider"];
         HomeSchoolWeb.Config = Config;
         HomeSchoolWeb.app.config(Config);
         HomeSchoolWeb.app.config(function (resourceServiceProvider) {

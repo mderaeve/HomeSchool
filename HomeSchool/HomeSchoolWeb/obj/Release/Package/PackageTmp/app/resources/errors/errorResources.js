@@ -13,7 +13,7 @@ var Home;
             var ErrorResources = (function (_super) {
                 __extends(ErrorResources, _super);
                 function ErrorResources() {
-                    _super.call(this, 'Error');
+                    return _super.call(this, 'Error') || this;
                 }
                 ErrorResources.prototype.setLanguageDictionary = function () {
                     var self = this;

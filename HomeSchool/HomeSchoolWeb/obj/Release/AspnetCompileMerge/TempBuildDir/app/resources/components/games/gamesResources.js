@@ -13,15 +13,17 @@ var Home;
             var GamesResources = (function (_super) {
                 __extends(GamesResources, _super);
                 function GamesResources() {
-                    _super.call(this, 'Games');
+                    return _super.call(this, 'Games') || this;
                 }
                 GamesResources.prototype.setLanguageDictionary = function () {
                     var self = this;
                     var Translations_en = [
-                        { key: 'tablesTitle', value: 'Practice tables' }
+                        { key: 'tablesTitle', value: 'Practice tables' },
+                        { key: 'hundredFieldTitle', value: 'Practice the 100 field' }
                     ];
                     var Translations_nl = [
-                        { key: 'tablesTitle', value: 'Tafels oefenen' }
+                        { key: 'tablesTitle', value: 'Tafels oefenen' },
+                        { key: 'hundredFieldTitle', value: 'Oefen het 100 veld' }
                     ];
                     self.languageDictionary = new C.Dictionary([
                         { key: 'en', value: new C.Dictionary(Translations_en) },
