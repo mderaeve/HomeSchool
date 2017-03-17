@@ -3,4 +3,13 @@ D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.dll
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.pdb
+<<<<<<< HEAD
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.csprojResolveAssemblyReference.cache
+=======
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll.config
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.csprojResolveAssemblyReference.cache
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.pdb
+>>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6

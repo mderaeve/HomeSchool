@@ -15,10 +15,10 @@ var Home;
                 HelpController.prototype.activate = function () {
                     var self = this;
                 };
-                HelpController.$inject = [C.Resources.ResourceProvider.id];
-                HelpController.id = "helpController";
                 return HelpController;
             }());
+            HelpController.$inject = [C.Resources.ResourceProvider.id];
+            HelpController.id = "helpController";
             Controllers.HelpController = HelpController;
             HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.HelpController.id, Home.HomeSchoolWeb.Controllers.HelpController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));

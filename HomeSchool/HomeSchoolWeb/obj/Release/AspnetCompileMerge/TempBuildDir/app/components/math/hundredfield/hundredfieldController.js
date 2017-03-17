@@ -17,10 +17,17 @@ var Home;
                     HundredFieldGameController.prototype.activate = function () {
                         var self = this;
                     };
+<<<<<<< HEAD
                     HundredFieldGameController.$inject = [C.Resources.ResourceProvider.id];
                     HundredFieldGameController.id = "hundredFieldGameController";
                     return HundredFieldGameController;
                 }());
+=======
+                    return HundredFieldGameController;
+                }());
+                HundredFieldGameController.$inject = [C.Resources.ResourceProvider.id];
+                HundredFieldGameController.id = "hundredFieldGameController";
+>>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6
                 Games.HundredFieldGameController = HundredFieldGameController;
                 HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController.id, Home.HomeSchoolWeb.Controllers.Games.HundredFieldGameController);
             })(Games = Controllers.Games || (Controllers.Games = {}));

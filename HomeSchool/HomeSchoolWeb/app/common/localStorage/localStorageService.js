@@ -21,10 +21,10 @@ var Home;
                     if (self.$window)
                         self.$window.localStorage.setItem(pair.key, pair.value);
                 };
-                LocalStorageService.$inject = ['$window'];
-                LocalStorageService.id = "localStorageService";
                 return LocalStorageService;
             }());
+            LocalStorageService.$inject = ['$window'];
+            LocalStorageService.id = "localStorageService";
             Services.LocalStorageService = LocalStorageService;
             angular.module('home.localstorage', [])
                 .service(Home.Common.Services.LocalStorageService.id, Home.Common.Services.LocalStorageService);

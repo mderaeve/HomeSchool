@@ -3,6 +3,7 @@
         <span>{{vm.resourceSvc.getLocalResource('Games.tablesTitle')}}</span>
     </div>
     <div class="panel-body">
+<<<<<<< HEAD
         <div class="row">
             <div class="col-lg-6">Kies tafels gescheiden dr komma</div>
             <div class="col-lg-2">Aantal oefeningen</div>
@@ -36,3 +37,37 @@
             </div>
          </div>
     </div>
+=======
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputMin" class="col-sm-2 control-label">Mintafel</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputMin" placeholder="Min">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputMax" class="col-sm-2 control-label">Maxtafel</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputMax" placeholder="Max">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputNr" class="col-sm-2 control-label">Aantal Oefeningen</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputNr" placeholder="Min">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </div>
+            </div>
+            <div>
+                <div ng-repeat="ex in vm.exercies">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+>>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6

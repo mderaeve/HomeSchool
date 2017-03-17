@@ -41,10 +41,10 @@ var Home;
                 ApplicationLifeTimeService.ApplicationLifeTimeFactory = function ($filter, logService) {
                     return new ApplicationLifeTimeService($filter, logService);
                 };
-                ApplicationLifeTimeService.$inject = ['$filter', S.LogService.id];
-                ApplicationLifeTimeService.id = 'applicationLifeTimeService';
                 return ApplicationLifeTimeService;
             }());
+            ApplicationLifeTimeService.$inject = ['$filter', S.LogService.id];
+            ApplicationLifeTimeService.id = 'applicationLifeTimeService';
             Factories.ApplicationLifeTimeService = ApplicationLifeTimeService;
             HomeSchoolWeb.app.factory(Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.id, ['$filter', S.LogService.id, Home.HomeSchoolWeb.Factories.ApplicationLifeTimeService.ApplicationLifeTimeFactory]);
         })(Factories = HomeSchoolWeb.Factories || (HomeSchoolWeb.Factories = {}));

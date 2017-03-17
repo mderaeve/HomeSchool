@@ -13,7 +13,7 @@ var Home;
             var NavigationResources = (function (_super) {
                 __extends(NavigationResources, _super);
                 function NavigationResources() {
-                    _super.call(this, 'Nav');
+                    return _super.call(this, 'Nav') || this;
                 }
                 NavigationResources.prototype.setLanguageDictionary = function () {
                     var self = this;

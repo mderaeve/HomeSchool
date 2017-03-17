@@ -23,10 +23,10 @@ var Home;
                 BuildController.prototype.activate = function () {
                     var self = this;
                 };
-                BuildController.$inject = ['$state', '$timeout', 'ngToast', C.Resources.ResourceProvider.id, F.ApplicationLifeTimeService.id, S.LogService.id];
-                BuildController.id = 'homeController';
                 return BuildController;
             }());
+            BuildController.$inject = ['$state', '$timeout', 'ngToast', C.Resources.ResourceProvider.id, F.ApplicationLifeTimeService.id, S.LogService.id];
+            BuildController.id = 'homeController';
             Controllers.BuildController = BuildController;
             HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.BuildController.id, Home.HomeSchoolWeb.Controllers.BuildController);
         })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));

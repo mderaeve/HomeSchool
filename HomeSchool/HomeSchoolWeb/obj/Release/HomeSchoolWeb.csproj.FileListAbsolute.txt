@@ -4,3 +4,9 @@ D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.csprojResolveAssemblyReference.cache
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.dll
 D:\Projects\Home\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.pdb
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll.config
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.csprojResolveAssemblyReference.cache
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Release\HomeSchoolWeb.pdb
