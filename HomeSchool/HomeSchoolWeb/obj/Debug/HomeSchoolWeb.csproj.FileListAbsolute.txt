@@ -1,6 +1,6 @@
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll.config
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.csprojResolveAssemblyReference.cache
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.dll
-D:\Projects\Home\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.pdb
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll.config
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\bin\HomeSchoolWeb.pdb
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.csprojResolveAssemblyReference.cache
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.dll
+E:\Mark\Develop\HomeSchool\HomeSchool\HomeSchool\HomeSchoolWeb\obj\Debug\HomeSchoolWeb.pdb
