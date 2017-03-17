@@ -7,6 +7,7 @@
          B: number;
          Answered: number;
          Correct: number;
+         Css: string;
     }
 
     export class TableExercise implements ITableExercise {
@@ -16,6 +17,7 @@
         public B: number = 0;
         public Answered: number = 0;
         public Correct: number = 0;
+        public Css: string = 'glyphicon glyphicon-pencil';
 
         constructor(obj?: TableExercise) {
             if (obj != null) {
@@ -24,6 +26,7 @@
                 this.B = obj.B;
                 this.Answered = obj.Answered;
                 this.Correct = obj.Correct;
+                this.Css = obj.Css;
             }
         }
     }

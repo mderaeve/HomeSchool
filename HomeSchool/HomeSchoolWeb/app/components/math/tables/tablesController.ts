@@ -15,7 +15,6 @@ module Home.Controllers.Games {
             this.activate();
         }
 
-        tablesString: string = '';
         numberOfExercises: number = 10;
         borderBottom: number = 1;
         borderTop: number = 10;
@@ -23,12 +22,6 @@ module Home.Controllers.Games {
 
         activate(): void {
             const self = this;
-            self.exercises = new Array<M.ITableExercise>();
-            var t = new M.TableExercise();
-            t.Id = 0;
-            t.A = 1;
-            t.B = 2;
-            self.exercises.push(t);
         }
 
         start(): void {
@@ -38,10 +31,32 @@ module Home.Controllers.Games {
             {
                 var t = new M.TableExercise();
                 t.Id = i;
-                t.A = 1;
-                t.B = 2;
+                t.A = self.getRandomInt(self.borderBottom, self.borderTop);
+                t.B = self.getRandomInt(self.borderBottom, self.borderTop);
+                t.Css = 'glyphicon glyphicon-pencil';
                 self.exercises.push(t);
             }
+        }
+
+        check(ex: M.TableExercise): void {
+            if (ex.A * ex.B == ex.Answered)
+            {
+                ex.Css = 'glyphicon glyphicon-ok';
+            }
+            else
+            {
+                ex.Css = 'glyphicon glyphicon-remove';
+            }
+
+        }
+
+
+        /**
+        * Returns a random integer between min (inclusive) and max (inclusive)
+         * Using Math.round() will give you a non-uniform distribution!
+         */
+        private getRandomInt(min, max): number {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
         }
     }
 

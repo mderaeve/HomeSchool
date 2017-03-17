@@ -7,19 +7,19 @@
             <div class="form-group">
                 <label for="inputMin" class="col-sm-2 control-label">Mintafel</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputMin" placeholder="Min">
+                    <input type="number" class="form-control" id="inputMin" placeholder="0" ng-model="vm.borderBottom">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputMax" class="col-sm-2 control-label">Maxtafel</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputMax" placeholder="Max">
+                    <input type="number" class="form-control" id="inputMax" placeholder="10" ng-model="vm.borderTop">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputNr" class="col-sm-2 control-label">Aantal Oefeningen</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputNr" placeholder="Min">
+                    <input type="number" class="form-control" id="inputNr" placeholder="10" ng-model="vm.numberOfExercises">
                 </div>
             </div>
             <div class="form-group">
@@ -27,23 +27,30 @@
                     <button type="button" class="btn btn-primary" ng-click="vm.start()">Go</button>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-lg-2">A</div>
-                    <div class="col-lg-1">x</div>
-                    <div class="col-lg-2">B</div>
-                    <div class="col-lg-4">Antwoord</div>
-                    <div class="col-lg-3">Oplossing</div>
-                </div>
-                <div class="row" ng-repeat="ex in vm.exercises">
-                    <div class="col-lg-2">{{ex.A}}</div>
-                    <div class="col-lg-3">x</div>
-                    <div class="col-lg-2">{{ex.B}}</div>
-                    <div class="col-lg-4"><input type="number"class="form-control" /></div>
-                    <div class="col-lg-3"></div>
-                </div>
+            <div align="center">
+                <table class="table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">A</th>
+                            <th>&nbsp;x&nbsp;</th>
+                            <th class="text-center">B</th>
+                            <th>Antwoord</th>
+                            <th>Oplossing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="ex in vm.exercises">
+                            <td><input type="number" class="form-control" ng-model="ex.A" disabled="disabled" /></td>
+                            <td class="text-center">&nbsp;x&nbsp;</td>
+                            <td><input type="number" class="form-control" ng-model="ex.B" disabled="disabled" /></td>
+                            <td><input type="number" class="form-control" ng-change="vm.check(ex)" ng-model="ex.Answered"/></td>
+                            <td class="text-center">
+                                <div ng-class="ex.Css"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <pre >{{vm.exercises||json}}</pre>
         </form>
     </div>
 </div>

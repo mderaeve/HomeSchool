@@ -9,12 +9,14 @@ var Home;
                 this.B = 0;
                 this.Answered = 0;
                 this.Correct = 0;
+                this.Css = 'glyphicon glyphicon-pencil';
                 if (obj != null) {
                     this.Id = obj.Id;
                     this.A = obj.A;
                     this.B = obj.B;
                     this.Answered = obj.Answered;
                     this.Correct = obj.Correct;
+                    this.Css = obj.Css;
                 }
             }
             return TableExercise;
