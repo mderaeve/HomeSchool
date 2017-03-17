@@ -5,14 +5,13 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Home;
 (function (Home) {
-<<<<<<< HEAD
     var Resources;
     (function (Resources) {
         var C = Home.Common;
         var ErrorResources = (function (_super) {
             __extends(ErrorResources, _super);
             function ErrorResources() {
-                _super.call(this, 'Error');
+                return _super.call(this, 'Error') || this;
             }
             ErrorResources.prototype.setLanguageDictionary = function () {
                 var self = this;
@@ -32,36 +31,5 @@ var Home;
         }(C.Resources.ResourceBase));
         Resources.ErrorResources = ErrorResources;
     })(Resources = Home.Resources || (Home.Resources = {}));
-=======
-    var HomeSchoolWeb;
-    (function (HomeSchoolWeb) {
-        var Resources;
-        (function (Resources) {
-            var C = Home.Common;
-            var ErrorResources = (function (_super) {
-                __extends(ErrorResources, _super);
-                function ErrorResources() {
-                    return _super.call(this, 'Error') || this;
-                }
-                ErrorResources.prototype.setLanguageDictionary = function () {
-                    var self = this;
-                    var Translations_en = [
-                        { key: 'unExpectedError', value: 'An unexpected error occurred. Contact IT support if the error persists.' },
-                    ];
-                    var Translations_nl = [
-                        { key: 'unExpectedError', value: 'Er heeft zich een onverwachte fout voorgedaan. Contacteer IT support als het probleem zich blijft voordoen.' },
-                    ];
-                    self.languageDictionary = new C.Dictionary([
-                        { key: 'en', value: new C.Dictionary(Translations_en) },
-                        { key: 'nl', value: new C.Dictionary(Translations_nl) }
-                    ]);
-                };
-                ;
-                return ErrorResources;
-            }(C.Resources.ResourceBase));
-            Resources.ErrorResources = ErrorResources;
-        })(Resources = HomeSchoolWeb.Resources || (HomeSchoolWeb.Resources = {}));
-    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
->>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6
 })(Home || (Home = {}));
 //# sourceMappingURL=errorResources.js.map

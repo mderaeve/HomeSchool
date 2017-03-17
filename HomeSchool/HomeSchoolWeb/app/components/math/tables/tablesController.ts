@@ -23,6 +23,12 @@ module Home.Controllers.Games {
 
         activate(): void {
             const self = this;
+            self.exercises = new Array<M.ITableExercise>();
+            var t = new M.TableExercise();
+            t.Id = 0;
+            t.A = 1;
+            t.B = 2;
+            self.exercises.push(t);
         }
 
         start(): void {

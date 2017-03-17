@@ -3,41 +3,6 @@
         <span>{{vm.resourceSvc.getLocalResource('Games.tablesTitle')}}</span>
     </div>
     <div class="panel-body">
-<<<<<<< HEAD
-        <div class="row">
-            <div class="col-lg-6">Kies tafels gescheiden dr komma</div>
-            <div class="col-lg-2">Aantal oefeningen</div>
-            <div class="col-lg-2">Ondergrens</div>
-            <div class="col-lg-2">Bovengrens</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6"><input type="text" class="form-control" ng-model="vm.tablesString" /></div>
-            <div class="col-lg-2"><input type="number" class="form-control" ng-model="vm.numberOfExercises" /></div>
-            <div class="col-lg-2"><input type="number" class="form-control" ng-model="vm.borderBottom" /></div>
-            <div class="col-lg-2"><input type="number" class="form-control" ng-model="vm.borderTop" /></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12"><button type="button" class="btn btn-primary" ng-click="vm.start()">OK</button> </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-lg-4"><div style="text-align:center">A x B</div></div>
-                    <div class="col-lg-2"><div style="text-align:center">Uitkomst</div></div>
-                    <div class="col-lg-6"></div>
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="row" ng-repeat="exercise in vm.exercises">
-                    <div class="col-lg-2"><input type="number" class="form-control" ng-model="exercise.A" /></div>
-                    <div class="col-lg-2"><input type="number" class="form-control" ng-model="exercise.B" /></div>
-                    <div class="col-lg-2"><input type="number" class="form-control" /></div>
-                    <div class="col-lg-6"><label class="label label-info" /></div>
-                </div>
-            </div>
-         </div>
-    </div>
-=======
         <form class="form-horizontal">
             <div class="form-group">
                 <label for="inputMin" class="col-sm-2 control-label">Mintafel</label>
@@ -59,15 +24,33 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Go</button>
+                    <button type="submit" class="btn btn-primary" ng-click="vm.start()">Go</button>
                 </div>
             </div>
-            <div>
-                <div ng-repeat="ex in vm.exercies">
-
-                </div>
+            <div class="form-group">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                A
+                            </th>
+                            <th>
+                                B
+                            </th>
+                            <th>
+                                =
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="ex in vm.exercies">
+                            <td>{{ex.A}}</td>
+                            <td>{{ex.B}}</td>
+                            <td><input type="number" /></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </form>
     </div>
 </div>
->>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6

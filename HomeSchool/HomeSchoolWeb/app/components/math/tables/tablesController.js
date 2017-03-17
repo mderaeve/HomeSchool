@@ -19,6 +19,12 @@ var Home;
                 }
                 TableGameController.prototype.activate = function () {
                     var self = this;
+                    self.exercises = new Array();
+                    var t = new M.TableExercise();
+                    t.Id = 0;
+                    t.A = 1;
+                    t.B = 2;
+                    self.exercises.push(t);
                 };
                 TableGameController.prototype.start = function () {
                     var self = this;
@@ -30,29 +36,14 @@ var Home;
                         t.B = 2;
                         self.exercises.push(t);
                     }
-<<<<<<< HEAD
                 };
-                TableGameController.$inject = [C.Resources.ResourceProvider.id];
-                TableGameController.id = "tableGameController";
                 return TableGameController;
             }());
+            TableGameController.$inject = [C.Resources.ResourceProvider.id];
+            TableGameController.id = "tableGameController";
             Games.TableGameController = TableGameController;
             Home.app.controller(Home.Controllers.Games.TableGameController.id, Home.Controllers.Games.TableGameController);
         })(Games = Controllers.Games || (Controllers.Games = {}));
     })(Controllers = Home.Controllers || (Home.Controllers = {}));
-=======
-                    TableGameController.prototype.activate = function () {
-                        var self = this;
-                    };
-                    return TableGameController;
-                }());
-                TableGameController.$inject = [C.Resources.ResourceProvider.id];
-                TableGameController.id = "tableGameController";
-                Games.TableGameController = TableGameController;
-                HomeSchoolWeb.app.controller(Home.HomeSchoolWeb.Controllers.Games.TableGameController.id, Home.HomeSchoolWeb.Controllers.Games.TableGameController);
-            })(Games = Controllers.Games || (Controllers.Games = {}));
-        })(Controllers = HomeSchoolWeb.Controllers || (HomeSchoolWeb.Controllers = {}));
-    })(HomeSchoolWeb = Home.HomeSchoolWeb || (Home.HomeSchoolWeb = {}));
->>>>>>> 3b3b4f57bc58df1b5a9384175ce2050a2db557f6
 })(Home || (Home = {}));
 //# sourceMappingURL=tablesController.js.map
