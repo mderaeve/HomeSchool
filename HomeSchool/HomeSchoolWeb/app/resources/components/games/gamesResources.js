@@ -17,11 +17,21 @@ var Home;
                 var self = this;
                 var Translations_en = [
                     { key: 'tablesTitle', value: 'Practice tables' },
-                    { key: 'hundredFieldTitle', value: 'Practice the 100 field' }
+                    { key: 'hundredFieldTitle', value: 'Practice the 100 field' },
+                    { key: 'tablesAnswer', value: 'Answer' },
+                    { key: 'tablesSolution', value: 'Solution' },
+                    { key: 'tablesMin', value: 'Min table' },
+                    { key: 'tablesMax', value: 'Max table' },
+                    { key: 'tablesNrOfExercises', value: 'Number of exercises' },
                 ];
                 var Translations_nl = [
                     { key: 'tablesTitle', value: 'Tafels oefenen' },
-                    { key: 'hundredFieldTitle', value: 'Oefen het 100 veld' }
+                    { key: 'hundredFieldTitle', value: 'Oefen het 100 veld' },
+                    { key: 'tablesAnswer', value: 'Antwoord' },
+                    { key: 'tablesSolution', value: 'Oplossing' },
+                    { key: 'tablesMin', value: 'Min tafel' },
+                    { key: 'tablesMax', value: 'Max tafel' },
+                    { key: 'tablesNrOfExercises', value: 'Aantal oefeningen' },
                 ];
                 self.languageDictionary = new C.Dictionary([
                     { key: 'en', value: new C.Dictionary(Translations_en) },
