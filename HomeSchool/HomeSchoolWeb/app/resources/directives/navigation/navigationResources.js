@@ -23,6 +23,7 @@ var Home;
                     { key: 'navItemMath', value: 'Math' },
                     { key: 'navItemHelp', value: 'Help' },
                     { key: 'navSubItemBlog', value: 'Blog' },
+                    { key: 'chooseUser', value: 'Choose User' },
                 ];
                 var Translations_nl = [
                     { key: 'title', value: 'Thuis School Web' },
@@ -32,6 +33,7 @@ var Home;
                     { key: 'navItemMath', value: 'Wiskunde' },
                     { key: 'navItemHelp', value: 'Help' },
                     { key: 'navSubItemBlog', value: 'Blog' },
+                    { key: 'chooseUser', value: 'Choose User' },
                 ];
                 self.languageDictionary = new C.Dictionary([
                     { key: 'en', value: new C.Dictionary(Translations_en) },

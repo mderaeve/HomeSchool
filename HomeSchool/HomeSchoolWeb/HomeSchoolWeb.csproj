@@ -73,6 +73,9 @@
     <Content Include="app\components\math\hundredfield\hundredfieldView.html" />
     <Content Include="app\components\math\tables\tablesView.html" />
     <Content Include="app\directives\navigation\navigationView.html" />
+    <Content Include="app\directives\user\userView.html" />
+    <Content Include="app\modals\user\pickuser\pickUserModalView.html" />
+    <Content Include="app\modals\user\settings\settingsModalView.html" />
     <Content Include="css\custom.css" />
     <Content Include="favicon.ico" />
     <Content Include="images\1487872027_Home.png" />
@@ -128,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\filters\" />
-    <Folder Include="app\modals\" />
     <Folder Include="app\resources\modals\" />
   </ItemGroup>
   <ItemGroup>
@@ -149,16 +151,23 @@
     <TypeScriptCompile Include="app\components\math\tables\tablesController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationDirective.ts" />
+    <TypeScriptCompile Include="app\directives\user\userController.ts" />
+    <TypeScriptCompile Include="app\directives\user\userDirective.ts" />
     <TypeScriptCompile Include="app\factories\applicationLifeTimeService.ts" />
     <TypeScriptCompile Include="app\models\DummyModel.ts" />
     <TypeScriptCompile Include="app\models\Language.ts" />
     <TypeScriptCompile Include="app\models\math\tableExercise.ts" />
     <TypeScriptCompile Include="app\models\RejectMessage.ts" />
+    <TypeScriptCompile Include="app\models\security\UserModel.ts" />
+    <TypeScriptCompile Include="app\resources\common\commonResources.ts" />
     <TypeScriptCompile Include="app\resources\components\games\gamesResources.ts" />
     <TypeScriptCompile Include="app\resources\directives\navigation\navigationResources.ts" />
+    <TypeScriptCompile Include="app\resources\directives\user\userResources.ts" />
     <TypeScriptCompile Include="app\resources\errors\errorResources.ts" />
     <TypeScriptCompile Include="app\resources\components\help\helpResources.ts" />
     <TypeScriptCompile Include="app\resources\components\home\homeResources.ts" />
+    <TypeScriptCompile Include="app\modals\user\pickuser\pickUserModalController.ts" />
+    <TypeScriptCompile Include="app\modals\user\settings\settingsModalController.ts" />
     <TypeScriptCompile Include="app\services\dummyService.ts" />
     <TypeScriptCompile Include="app\services\logService.ts" />
     <TypeScriptCompile Include="app\_app.ts" />

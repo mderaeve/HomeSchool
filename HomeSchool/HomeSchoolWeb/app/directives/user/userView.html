@@ -1,0 +1,25 @@
+﻿<div>
+    <!-- ADMIN USER -->
+    <div class="btn-group" uib-dropdown>
+        <button id="split-button" type="button" class="btn btn-default">
+            <i class="glyphicon glyphicon-user button-glyph"></i>{{vm.getLoggedInUser()}}
+        </button>
+        <button type="button" class="btn btn-default" uib-dropdown-toggle>
+            <span class="caret"></span>
+            <span class="sr-only">Split button!</span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
+            <!-- ADMIN USER -->
+            <li role="menuitem" ">
+                <a ng-click="vm.pickUser()"><i class="glyphicon glyphicon-user"></i> {{vm.resourceSvc.getLocalResource('User.chooseUser')}}</a>
+            </li>
+            <li class="divider" ng-if="vm.userPicked"></li>
+            <!-- /ADMIN USER -->
+            <!-- ALL USER -->
+            <li role="menuitem">
+                <a ng-click="vm.openSettings()"><i class="glyphicon glyphicon-cog"></i> {{vm.resourceSvc.getLocalResource('User.settings')}}</a>
+            </li>
+            <!-- ALL USER -->
+        </ul>
+    </div>
+</div>

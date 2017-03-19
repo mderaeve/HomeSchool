@@ -11,7 +11,8 @@
                 { key: 'navItemSpelling', value: 'Spelling' },
                 { key: 'navItemMath', value: 'Math' },
                 { key: 'navItemHelp', value: 'Help' },
-                { key: 'navSubItemBlog', value: 'Blog'},
+                { key: 'navSubItemBlog', value: 'Blog' },
+                { key: 'chooseUser', value: 'Choose User' },
             ];
 
             let Translations_nl: Array<C.KeyValuePair<string, string>> = [
@@ -22,6 +23,7 @@
                 { key: 'navItemMath', value: 'Wiskunde' },
                 { key: 'navItemHelp', value: 'Help' },
                 { key: 'navSubItemBlog', value: 'Blog' },
+                { key: 'chooseUser', value: 'Choose User' },
             ];
 
             self.languageDictionary = new C.Dictionary<string, C.Dictionary<string, string>>([

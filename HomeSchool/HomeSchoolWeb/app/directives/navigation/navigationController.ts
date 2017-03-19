@@ -20,7 +20,6 @@ module Home.Controllers {
             private localStorageSvc: C.Services.ILocalStorageService,
             private appLTSvc: F.IApplicationLifeTimeService
         ) {
-            
             this.activate();
         }
 

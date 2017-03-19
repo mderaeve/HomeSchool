@@ -1,0 +1,19 @@
+﻿<div class="modal-header">
+    <span class="h3">{{vm.resourceSvc.getLocalResource('User.settings')}}</span>
+    <button class="close" type="button" ng-click="vm.onCancel()">×</button>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="settings-category">Profile</span>
+        </div>
+        <div class="col-sm-6">
+           test
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="vm.onCancel()">
+        {{vm.resourceSvc.getLocalResource('Common.close')}}
+    </button>
+</div>

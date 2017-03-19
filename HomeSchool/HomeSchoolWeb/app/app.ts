@@ -59,6 +59,8 @@ module Home {
         resourceConfig.addResource(new Home.Resources.NavigationResources());
         resourceConfig.addResource(new Home.Resources.ErrorResources());
         resourceConfig.addResource(new Home.Resources.GamesResources());
+        resourceConfig.addResource(new Home.Resources.UserResources());
+        resourceConfig.addResource(new Home.Resources.CommonResources());
         resourceServiceProvider.config(resourceConfig);
     });
     app.config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {

@@ -45,18 +45,29 @@
     font-size: 20px;
 }
 
+.button-glyph {
+    margin-right: 8px;
+}
+
 @media screen and (max-width: 992px) {
     h4 {
         font-size: 95%;
     }
+
     h1 {
-        font-size: 24px;  
+        font-size: 24px;
     }
+
     h2 {
-        font-size: 22px;  
+        font-size: 22px;
     }
+
     h3 {
-        font-size: 18px;  
+        font-size: 18px;
+    }
+
+    .review-field {
+        text-decoration: underline;
     }
 }
 
@@ -64,14 +75,21 @@
     h4 {
         font-size: 90%;
     }
+
     h1 {
-        font-size: 20px;  
+        font-size: 20px;
     }
+
     h2 {
-        font-size: 18px;  
+        font-size: 18px;
     }
+
     h3 {
-        font-size: 16px;  
+        font-size: 16px;
+    }
+
+    .review-field {
+        text-decoration: underline;
     }
 }
 
@@ -79,15 +97,93 @@
     h4 {
         font-size: 90%;
     }
+
     h1 {
-        font-size: 18px;  
+        font-size: 18px;
     }
+
     h2 {
-        font-size: 16px;  
+        font-size: 16px;
     }
+
     h3 {
-        font-size: 14px;  
+        font-size: 14px;
     }
+
+    .review-field {
+        text-decoration: underline;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+body, html {
+    font-family: Trebuchet MS;
+}
+
+.steps-indicator {
+    padding: 40px 0;
+}
+
+.ng-binding.question-caption {
+    padding: 15px 0px;
+}
+
+.app-body {
+    margin-top: 0px;
+}
+
+/* Buttons */
+.btn-default {
+    background-image: none;
+    background-color: #E6E6E6;
+}
+
+/* Navigation */
+.navbar {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #333;
+}
+
+.navbar-default {
+    background-color: #FAFAFA;
+    border-color: #ECECEC;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 2px solid transparent;
+    color: #333;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 32px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background: #f2f2f2;
+    border-bottom-color: #ed1a3b;
+}
+
+.language-select {
+    margin-top: 8px;
+    margin-right: 24px;
+}
+
+.auth .icon-rnd {
+    margin-right: 5px;
 }
 
 table {
