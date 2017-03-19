@@ -16,10 +16,22 @@ var Home;
                         value = self.$window.localStorage.getItem(key);
                     return value;
                 };
+                LocalStorageService.prototype.getItemAny = function (key) {
+                    var self = this;
+                    var value = '';
+                    if (self.$window)
+                        value = JSON.parse(self.$window.localStorage.getItem(key));
+                    return value;
+                };
                 LocalStorageService.prototype.setItem = function (pair) {
                     var self = this;
                     if (self.$window)
                         self.$window.localStorage.setItem(pair.key, pair.value);
+                };
+                LocalStorageService.prototype.setItemAny = function (pair) {
+                    var self = this;
+                    if (self.$window)
+                        self.$window.localStorage.setItem(pair.key, JSON.stringify(pair.value));
                 };
                 return LocalStorageService;
             }());

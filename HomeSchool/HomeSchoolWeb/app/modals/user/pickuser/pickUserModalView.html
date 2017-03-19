@@ -4,13 +4,13 @@
 </div>
 <div class="modal-body">
     <div class="row">
-        <div class="col-lg-10"><input type="text" class="form-control" /></div>
+        <div class="col-lg-10"><input type="text" class="form-control" ng-model="vm.userName" required/></div>
         <div class="col-lg-2">
             <button type="button" class="btn btn-success" ng-click="vm.createUser()">{{vm.resourceSvc.getLocalResource('Common.new')}}</button>
         </div>
     </div>
-    <div class="row">
-
+    <div class="row" ng-repeat="u in vm.users track by $index">
+       <div class="col-lg-1">{{u.Id}}</div><div class="col-lg-9">{{u.Name}}</div><div class="col-lg-2"> <button type="button" class="btn btn-danger" ng-click="vm.removeUser(u);"><span class="glyphicon glyphicon-remove"></span></button> </div>
     </div>
 </div>
 <div class="modal-footer">

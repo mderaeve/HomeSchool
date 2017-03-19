@@ -4,12 +4,15 @@
 module Home.Controllers {
     import C = Home.Common;
 
+
     export class UserController {
         static $inject: string[] = ['$uibModal',C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id];
         static id: string = 'userController';
 
         loggedInUser: string;
         userPicked: boolean = false;
+        
+
         private pickUserModal: ng.ui.bootstrap.IModalServiceInstance;
         private settingsModal: ng.ui.bootstrap.IModalServiceInstance;
 
@@ -30,6 +33,8 @@ module Home.Controllers {
         activate(): void {
             const self = this;
             self.loggedInUser = self.resourceSvc.getLocalResource('User.chooseUser');
+            
+
             //if (self.authenticationSvc.isAuthenticated()) {
             //    var activeUser = self.authenticationSvc.getIdentity();
 
