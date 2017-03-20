@@ -6,11 +6,13 @@ var Home;
             function UserModel(obj) {
                 this.Id = null;
                 this.Name = null;
-                this.Rank = null;
+                this.Rank = 0;
+                this.Avater = 0;
                 if (obj != null) {
                     this.Id = obj.Id;
                     this.Name = obj.Name;
                     this.Rank = obj.Rank;
+                    this.Avater = obj.Avater;
                 }
             }
             return UserModel;

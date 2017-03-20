@@ -1,14 +1,49 @@
 ﻿<div class="modal-header">
-    <span class="h3">{{vm.resourceSvc.getLocalResource('User.settings')}}</span>
-    <button class="close" type="button" ng-click="vm.onCancel()">×</button>
+    <div class="row">
+        <div class="col-lg-8 col-xs-6">
+            <div class="short-div">
+                <h1>{{vm.resourceSvc.getLocalResource('User.profile')}}</h1>
+            </div>
+            <div class="short-div">
+                <p>{{vm.resourceSvc.getLocalResource('User.profileText')}}</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <img alt="{{vm.userSvc.getUser().Name}}" ng-src="../../../../images/{{vm.getImageUrlForAvatar()}}" class="twPc-avatarImg pull-right" ng-click="vm.selectAvater()">
+        </div>
+    </div>
 </div>
 <div class="modal-body">
-    <div class="row">
-        <div class="col-sm-12">
-            <span class="settings-category">Profile</span>
-        </div>
-        <div class="col-sm-6">
-           {{vm.userSvc.getUser().Name}}
+    <div class="container">
+        <div class="row">
+            <!-- code start -->
+            <div class="twPc-div">
+                <div>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="twPc-divUser">
+                                <div class="twPc-divName">
+                                    {{vm.userSvc.getUser().Name}}
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="twPc-divStats">
+                        <ul class="twPc-Arrange">
+                            <li class="twPc-ArrangeSizeFit">
+                                <span class="twPc-StatLabel twPc-block">{{vm.resourceSvc.getLocalResource('Games.points')}}</span>
+                                <span class="twPc-StatValue">{{vm.userSvc.getUser().Rank}}</span>
+                            </li>
+                            <li class="twPc-ArrangeSizeFit">
+                                <span class="twPc-StatLabel twPc-block">{{vm.resourceSvc.getLocalResource('Games.rank')}}</span>
+                                <span class="twPc-StatValue"><img class="twPc-avatarImg" ng-src="../../../../images/{{vm.getImageUrlForRank()}}" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- code end -->
         </div>
     </div>
 </div>

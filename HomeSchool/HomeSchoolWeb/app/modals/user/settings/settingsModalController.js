@@ -23,6 +23,21 @@ var Home;
                 var self = this;
                 self.$uibModalInstance.dismiss('close');
             };
+            SettingsModalController.prototype.selectAvater = function () {
+                var self = this;
+                self.userSvc.getUser().Avater++;
+                if (self.userSvc.getUser().Avater > 9)
+                    self.userSvc.getUser().Avater = 0;
+                self.userSvc.saveUser();
+            };
+            SettingsModalController.prototype.getImageUrlForAvatar = function () {
+                var self = this;
+                var url = 'p' + String(self.userSvc.getUser().Avater) + '.jpg';
+                return url;
+            };
+            SettingsModalController.prototype.getImageUrlForRank = function () {
+                return "r0.jpg";
+            };
             return SettingsModalController;
         }());
         SettingsModalController.id = 'settingsModalController';

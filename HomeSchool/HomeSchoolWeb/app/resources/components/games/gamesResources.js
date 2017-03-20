@@ -23,6 +23,8 @@ var Home;
                     { key: 'tablesMin', value: 'Min table' },
                     { key: 'tablesMax', value: 'Max table' },
                     { key: 'tablesNrOfExercises', value: 'Number of exercises' },
+                    { key: 'points', value: 'Points' },
+                    { key: 'rank', value: 'Rank' },
                 ];
                 var Translations_nl = [
                     { key: 'tablesTitle', value: 'Tafels oefenen' },
@@ -32,6 +34,8 @@ var Home;
                     { key: 'tablesMin', value: 'Min tafel' },
                     { key: 'tablesMax', value: 'Max tafel' },
                     { key: 'tablesNrOfExercises', value: 'Aantal oefeningen' },
+                    { key: 'points', value: 'Punten' },
+                    { key: 'rank', value: 'Rang' },
                 ];
                 self.languageDictionary = new C.Dictionary([
                     { key: 'en', value: new C.Dictionary(Translations_en) },

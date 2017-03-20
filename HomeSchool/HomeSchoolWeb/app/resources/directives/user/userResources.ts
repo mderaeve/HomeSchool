@@ -7,11 +7,15 @@
             let Translations_en: Array<C.KeyValuePair<string, string>> = [
                 { key: 'chooseUser', value: 'Choose User' },
                 { key: 'settings', value: 'Settings' },
+                { key: 'profile', value: 'Profile' },
+                { key: 'profileText', value: 'Overview of your user profile.' },
             ];
 
             let Translations_nl: Array<C.KeyValuePair<string, string>> = [
                 { key: 'chooseUser', value: 'Kies Gebruiker' },
                 { key: 'settings', value: 'Instellingen' },
+                { key: 'profile', value: 'Profiel' },
+                { key: 'profileText', value: 'Overzicht van je gegevens.' },
             ];
 
             self.languageDictionary = new C.Dictionary<string, C.Dictionary<string, string>>([

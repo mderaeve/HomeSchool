@@ -22,9 +22,12 @@ var Home;
                 self.loggedInUser = user;
                 self.localStorageSvc.setItemAny(new C.KeyValuePair('loggedInUser', user));
             };
+            UserService.prototype.saveUser = function () {
+                var self = this;
+                self.localStorageSvc.setItemAny(new C.KeyValuePair('loggedInUser', self.loggedInUser));
+            };
             UserService.prototype.getUser = function () {
                 var self = this;
-                self.logService.log('Getting user');
                 if (self.loggedInUser == null) {
                     var user = self.localStorageSvc.getItemAny('loggedInUser');
                     if (user != null) {

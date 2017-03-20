@@ -18,10 +18,14 @@ var Home;
                 var Translations_en = [
                     { key: 'chooseUser', value: 'Choose User' },
                     { key: 'settings', value: 'Settings' },
+                    { key: 'profile', value: 'Profile' },
+                    { key: 'profileText', value: 'Overview of your user profile.' },
                 ];
                 var Translations_nl = [
                     { key: 'chooseUser', value: 'Kies Gebruiker' },
                     { key: 'settings', value: 'Instellingen' },
+                    { key: 'profile', value: 'Profiel' },
+                    { key: 'profileText', value: 'Overzicht van je gegevens.' },
                 ];
                 self.languageDictionary = new C.Dictionary([
                     { key: 'en', value: new C.Dictionary(Translations_en) },

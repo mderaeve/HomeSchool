@@ -77,8 +77,20 @@
     <Content Include="app\modals\user\pickuser\pickUserModalView.html" />
     <Content Include="app\modals\user\settings\settingsModalView.html" />
     <Content Include="css\custom.css" />
+    <Content Include="css\userprofile.css" />
     <Content Include="favicon.ico" />
     <Content Include="images\1487872027_Home.png" />
+    <Content Include="images\p0.jpg" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\p4.jpg" />
+    <Content Include="images\p5.jpg" />
+    <Content Include="images\p6.jpg" />
+    <Content Include="images\p7.jpg" />
+    <Content Include="images\p8.jpg" />
+    <Content Include="images\p9.jpg" />
+    <Content Include="images\r0.jpg" />
     <Content Include="index.html" />
     <Content Include="nodes\css\bootstrap-theme.css" />
     <Content Include="nodes\css\bootstrap-theme.min.css" />
@@ -129,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\filters\" />
-    <Folder Include="app\resources\modals\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />

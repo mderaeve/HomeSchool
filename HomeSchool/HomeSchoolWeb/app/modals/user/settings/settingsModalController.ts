@@ -36,7 +36,27 @@ module Home.Controllers {
             const self = this;
             self.$uibModalInstance.dismiss('close');
         }
-        
+
+        selectAvater(): void
+        {
+            const self = this;
+           
+            self.userSvc.getUser().Avater++;
+            if (self.userSvc.getUser().Avater > 9) self.userSvc.getUser().Avater = 0;
+            self.userSvc.saveUser(); 
+        }
+
+        getImageUrlForAvatar(): string
+        {
+            const self = this;
+            let url = 'p' + String(self.userSvc.getUser().Avater) +'.jpg';
+            return url;
+        }
+
+        getImageUrlForRank(): string
+        {
+            return "r0.jpg";
+        }
     }
 
     app.controller(Home.Controllers.SettingsModalController.id, Home.Controllers.SettingsModalController);

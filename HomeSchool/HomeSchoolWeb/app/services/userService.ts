@@ -6,7 +6,8 @@ module Home.Services {
 
     export interface IUserService {
         getUser: () => M.IUserModel;
-        setUser: (user: M.IUserModel)=> void;
+        setUser: (user: M.IUserModel) => void;
+        saveUser:()=> void
     }
 
     export class UserService implements IUserService {
@@ -18,8 +19,7 @@ module Home.Services {
             private $http: ng.IHttpService,
             private $filter: ng.IFilterService,
             private logService: ILogService,
-            private localStorageSvc: C.Services.ILocalStorageService)
-        {
+            private localStorageSvc: C.Services.ILocalStorageService) {
 
             this.activate();
         }
@@ -30,18 +30,21 @@ module Home.Services {
 
         }
 
-        setUser(user: M.IUserModel): void
-        {
+        setUser(user: M.IUserModel): void {
             const self = this;
             self.logService.log('Setting user');
             self.loggedInUser = user;
             self.localStorageSvc.setItemAny(new C.KeyValuePair<string, any>('loggedInUser', user));
         }
 
+        saveUser(): void
+        {
+            const self = this;
+            self.localStorageSvc.setItemAny(new C.KeyValuePair<string, any>('loggedInUser', self.loggedInUser));
+        }
+    
         getUser(): M.IUserModel {
             const self = this;
-            self.logService.log('Getting user');
-                       
             if (self.loggedInUser == null) {
                 var user = self.localStorageSvc.getItemAny('loggedInUser');
                 if (user != null) {
