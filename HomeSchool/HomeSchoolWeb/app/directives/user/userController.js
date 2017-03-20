@@ -24,7 +24,7 @@ var Home;
             UserController.prototype.getLoggedInUser = function () {
                 var self = this;
                 //Set the user to the picked user.
-                if (self.userSvc.getUser != null) {
+                if (self.userSvc.getUser() != null) {
                     return self.userSvc.getUser().Name;
                 }
                 else {
