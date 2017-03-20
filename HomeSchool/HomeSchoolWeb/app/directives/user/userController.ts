@@ -3,15 +3,12 @@
 
 module Home.Controllers {
     import C = Home.Common;
+    import S = Home.Services;
 
 
     export class UserController {
-        static $inject: string[] = ['$uibModal',C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id];
+        static $inject: string[] = ['$uibModal',C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, S.UserService.id];
         static id: string = 'userController';
-
-        loggedInUser: string;
-        userPicked: boolean = false;
-        
 
         private pickUserModal: ng.ui.bootstrap.IModalServiceInstance;
         private settingsModal: ng.ui.bootstrap.IModalServiceInstance;
@@ -20,6 +17,7 @@ module Home.Controllers {
             private $uibModal: ng.ui.bootstrap.IModalService,
             private resourceSvc: C.Resources.IResourceService,
             private localStorageSvc: C.Services.ILocalStorageService,
+            private userSvc: S.IUserService,
         ) {
             const self = this;
 
@@ -32,21 +30,15 @@ module Home.Controllers {
 
         activate(): void {
             const self = this;
-            self.loggedInUser = self.resourceSvc.getLocalResource('User.chooseUser');
-            
 
-            //if (self.authenticationSvc.isAuthenticated()) {
-            //    var activeUser = self.authenticationSvc.getIdentity();
-
-            //    self.loggedInUser = `${activeUser.LastName}, ${activeUser.FirstName}`;
-            //}
         }
 
         getLoggedInUser(): string {
             const self = this;
-            if (self.userPicked == true) {
+            
                 //Set the user to the picked user.
-                return 'Anna-Lisa';
+            if (self.userSvc.getUser != null) {
+                return self.userSvc.getUser().Name;
             }
             else {
                 return self.resourceSvc.getLocalResource('User.chooseUser');

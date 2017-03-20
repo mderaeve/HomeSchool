@@ -2,6 +2,7 @@
 module Home.Controllers {
     import C = Home.Common;
     import M = Home.Models;
+    import S = Home.Services;
 
     export class PickUserModalController {
         static id: string = 'pickUserModalController';
@@ -12,6 +13,7 @@ module Home.Controllers {
             '$timeout',
             C.Resources.ResourceProvider.id,
             C.Services.LocalStorageService.id,
+            S.UserService.id
         ];
 
         users: Array<M.IUserModel> = null;
@@ -24,6 +26,7 @@ module Home.Controllers {
             private $timeout: ng.ITimeoutService,
             private resourceSvc: C.Resources.IResourceService,
             private localStorageSvc: C.Services.ILocalStorageService,
+            private userSvc: S.IUserService
         ) {
         }
 
@@ -59,6 +62,11 @@ module Home.Controllers {
             {
                 //show error
             }
+        }
+
+        selectUser(u: M.UserModel): void {
+            const self = this;
+            self.userSvc.setUser(u);
         }
 
         removeUser(u: M.UserModel): void {

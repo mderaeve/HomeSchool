@@ -9,9 +9,28 @@
             <button type="button" class="btn btn-success" ng-click="vm.createUser()">{{vm.resourceSvc.getLocalResource('Common.new')}}</button>
         </div>
     </div>
-    <div class="row" ng-repeat="u in vm.users track by $index">
-       <div class="col-lg-1">{{u.Id}}</div><div class="col-lg-9">{{u.Name}}</div><div class="col-lg-2"> <button type="button" class="btn btn-danger" ng-click="vm.removeUser(u);"><span class="glyphicon glyphicon-remove"></span></button> </div>
-    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Rank</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="u in vm.users track by $index" ng-click="vm.selectUser(u)">
+                <th  scope="row">{{u.Id}}</th>
+                <td>{{u.Name}}</td>
+                <td>{{u.Rank}}</td>
+                <td>
+                    <button type="button" class="btn btn-danger" ng-click="vm.removeUser(u);">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-primary" ng-click="vm.onCancel()">

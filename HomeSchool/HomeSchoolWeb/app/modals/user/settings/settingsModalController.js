@@ -4,14 +4,16 @@ var Home;
     var Controllers;
     (function (Controllers) {
         var C = Home.Common;
+        var S = Home.Services;
         var SettingsModalController = (function () {
-            function SettingsModalController($state, $uibModal, $uibModalInstance, $timeout, resourceSvc, localStorageSvc) {
+            function SettingsModalController($state, $uibModal, $uibModalInstance, $timeout, resourceSvc, localStorageSvc, userSvc) {
                 this.$state = $state;
                 this.$uibModal = $uibModal;
                 this.$uibModalInstance = $uibModalInstance;
                 this.$timeout = $timeout;
                 this.resourceSvc = resourceSvc;
                 this.localStorageSvc = localStorageSvc;
+                this.userSvc = userSvc;
                 this.storageValidDate = new Date();
             }
             SettingsModalController.prototype.$onInit = function () {
@@ -31,6 +33,7 @@ var Home;
             '$timeout',
             C.Resources.ResourceProvider.id,
             C.Services.LocalStorageService.id,
+            S.UserService.id
         ];
         Controllers.SettingsModalController = SettingsModalController;
         Home.app.controller(Home.Controllers.SettingsModalController.id, Home.Controllers.SettingsModalController);

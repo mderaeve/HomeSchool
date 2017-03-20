@@ -1,6 +1,7 @@
 ﻿'use strict';
 module Home.Controllers {
     import C = Home.Common;
+    import S = Home.Services;
 
     export class SettingsModalController {
         static id: string = 'settingsModalController';
@@ -11,6 +12,7 @@ module Home.Controllers {
             '$timeout',
             C.Resources.ResourceProvider.id,
             C.Services.LocalStorageService.id,
+            S.UserService.id
         ];
 
         storageValidDate: Date = new Date();
@@ -22,6 +24,7 @@ module Home.Controllers {
             private $timeout: ng.ITimeoutService,
             private resourceSvc: C.Resources.IResourceService,
             private localStorageSvc: C.Services.ILocalStorageService,
+            private userSvc: S.IUserService
         ) {
         }
 

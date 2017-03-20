@@ -5,12 +5,13 @@ var Home;
     var Controllers;
     (function (Controllers) {
         var C = Home.Common;
+        var S = Home.Services;
         var UserController = (function () {
-            function UserController($uibModal, resourceSvc, localStorageSvc) {
+            function UserController($uibModal, resourceSvc, localStorageSvc, userSvc) {
                 this.$uibModal = $uibModal;
                 this.resourceSvc = resourceSvc;
                 this.localStorageSvc = localStorageSvc;
-                this.userPicked = false;
+                this.userSvc = userSvc;
                 var self = this;
             }
             UserController.prototype.$onInit = function () {
@@ -19,17 +20,12 @@ var Home;
             };
             UserController.prototype.activate = function () {
                 var self = this;
-                self.loggedInUser = self.resourceSvc.getLocalResource('User.chooseUser');
-                //if (self.authenticationSvc.isAuthenticated()) {
-                //    var activeUser = self.authenticationSvc.getIdentity();
-                //    self.loggedInUser = `${activeUser.LastName}, ${activeUser.FirstName}`;
-                //}
             };
             UserController.prototype.getLoggedInUser = function () {
                 var self = this;
-                if (self.userPicked == true) {
-                    //Set the user to the picked user.
-                    return 'Anna-Lisa';
+                //Set the user to the picked user.
+                if (self.userSvc.getUser != null) {
+                    return self.userSvc.getUser().Name;
                 }
                 else {
                     return self.resourceSvc.getLocalResource('User.chooseUser');
@@ -59,7 +55,7 @@ var Home;
             };
             return UserController;
         }());
-        UserController.$inject = ['$uibModal', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id];
+        UserController.$inject = ['$uibModal', C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id, S.UserService.id];
         UserController.id = 'userController';
         Controllers.UserController = UserController;
         Home.app.controller(Home.Controllers.UserController.id, Home.Controllers.UserController);

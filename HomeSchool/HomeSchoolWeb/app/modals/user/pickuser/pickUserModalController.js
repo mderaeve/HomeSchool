@@ -5,14 +5,16 @@ var Home;
     (function (Controllers) {
         var C = Home.Common;
         var M = Home.Models;
+        var S = Home.Services;
         var PickUserModalController = (function () {
-            function PickUserModalController($state, $uibModal, $uibModalInstance, $timeout, resourceSvc, localStorageSvc) {
+            function PickUserModalController($state, $uibModal, $uibModalInstance, $timeout, resourceSvc, localStorageSvc, userSvc) {
                 this.$state = $state;
                 this.$uibModal = $uibModal;
                 this.$uibModalInstance = $uibModalInstance;
                 this.$timeout = $timeout;
                 this.resourceSvc = resourceSvc;
                 this.localStorageSvc = localStorageSvc;
+                this.userSvc = userSvc;
                 this.users = null;
             }
             PickUserModalController.prototype.$onInit = function () {
@@ -42,6 +44,10 @@ var Home;
                 else {
                 }
             };
+            PickUserModalController.prototype.selectUser = function (u) {
+                var self = this;
+                self.userSvc.setUser(u);
+            };
             PickUserModalController.prototype.removeUser = function (u) {
                 var self = this;
                 var index = self.users.indexOf(u, 0);
@@ -64,6 +70,7 @@ var Home;
             '$timeout',
             C.Resources.ResourceProvider.id,
             C.Services.LocalStorageService.id,
+            S.UserService.id
         ];
         Controllers.PickUserModalController = PickUserModalController;
         Home.app.controller(Home.Controllers.PickUserModalController.id, Home.Controllers.PickUserModalController);
