@@ -42,7 +42,7 @@ module Home.Controllers {
             const self = this;
            
             self.userSvc.getUser().Avater++;
-            if (self.userSvc.getUser().Avater > 9) self.userSvc.getUser().Avater = 0;
+            if (self.userSvc.getUser().Avater > 12) self.userSvc.getUser().Avater = 0;
             self.userSvc.saveUser(); 
         }
 
