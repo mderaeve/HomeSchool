@@ -2,12 +2,14 @@
 'use strict';
 module Home.Controllers.Games {
     import C = Home.Common;
+    import M = Home.Models;
 
     export class HundredFieldGameController {
         static $inject: string[] = [C.Resources.ResourceProvider.id];
         static id: string = "hundredFieldGameController";
 
         $resourceHelper: C.Resources.IResourceHelper;
+        
 
         constructor(private resourceSvc: C.Resources.IResourceService) {
             this.activate();
@@ -15,6 +17,8 @@ module Home.Controllers.Games {
 
         activate(): void {
             const self = this;
+
+            
         }
     }
 

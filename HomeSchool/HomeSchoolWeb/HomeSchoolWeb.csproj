@@ -168,6 +168,8 @@
     <TypeScriptCompile Include="app\factories\applicationLifeTimeService.ts" />
     <TypeScriptCompile Include="app\models\DummyModel.ts" />
     <TypeScriptCompile Include="app\models\Language.ts" />
+    <TypeScriptCompile Include="app\models\math\hundredField.ts" />
+    <TypeScriptCompile Include="app\models\math\hundredFieldLine.ts" />
     <TypeScriptCompile Include="app\models\math\tableExercise.ts" />
     <TypeScriptCompile Include="app\models\RejectMessage.ts" />
     <TypeScriptCompile Include="app\models\security\UserModel.ts" />

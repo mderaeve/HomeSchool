@@ -11,11 +11,10 @@ module Home.Controllers {
         static $inject: string[] = [C.Resources.ResourceProvider.id, C.Services.LocalStorageService.id];
         static id: string = 'hundredFieldLineController';
 
-        lineStart: number;
-        lineStop: number;
+        lineStart: string;
+        lineLen: string;
 
-        totalNumbers: number;
-        exercises: Array<M.TableExercise>;
+        fields: Array<M.IHundredField>;
 
         constructor(
             private resourceSvc: C.Resources.IResourceService,
@@ -26,22 +25,20 @@ module Home.Controllers {
 
         private activate(): void {
             const self = this;
-            self.totalNumbers = self.lineStop - self.lineStart;
-            self.exercises = new Array<M.TableExercise>();
-            for (let i = 0; i < self.totalNumbers; i++) {
-                var t = new M.TableExercise();
+            let lineLength: number = parseInt(self.lineStart) + parseInt(self.lineLen);
+            self.fields = new Array<M.IHundredField>();
+            for (let i = parseInt(self.lineStart); i < lineLength; i++) {
+                var t = new M.HundredField();
                 t.Id = i;
-                t.A = 1;
-                t.B = 2;
-                t.Css = 'glyphicon glyphicon-pencil';
-                self.exercises.push(t);
+                t.Number = i ;
+                t.Visible = true;
+                self.fields.push(t);
             }
         }
 
-        getTotalNumbers(): number
+        clicked(l: M.IHundredField): void
         {
-            const self = this;
-            return self.lineStop - self.lineStart +1;
+            l.Css = 'btn btn-success btn-block';
         }
     }
 

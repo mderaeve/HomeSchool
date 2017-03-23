@@ -1,6 +1,6 @@
 ﻿<tr class="row">
-    <td ng-repeat-start="x in vm.exercises">
-        <button type="button" class="btn btn-primary btn-block">{{x.A}}</button>
+    <td ng-repeat-start="l in vm.fields">
+        <button type="button" class="btn btn-primary btn-block" ng-class="l.Css" ng-click="vm.clicked(l)">{{l.Number}}</button>
     </td>
-   <td <td ng-repeat-end></td>
+    <td ng-repeat-end></td>
 </tr>

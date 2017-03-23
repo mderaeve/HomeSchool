@@ -14,20 +14,18 @@ var Home;
             }
             HundredFieldLineController.prototype.activate = function () {
                 var self = this;
-                self.totalNumbers = self.lineStop - self.lineStart;
-                self.exercises = new Array();
-                for (var i = 0; i < self.totalNumbers; i++) {
-                    var t = new M.TableExercise();
+                var lineLength = parseInt(self.lineStart) + parseInt(self.lineLen);
+                self.fields = new Array();
+                for (var i = parseInt(self.lineStart); i < lineLength; i++) {
+                    var t = new M.HundredField();
                     t.Id = i;
-                    t.A = 1;
-                    t.B = 2;
-                    t.Css = 'glyphicon glyphicon-pencil';
-                    self.exercises.push(t);
+                    t.Number = i;
+                    t.Visible = true;
+                    self.fields.push(t);
                 }
             };
-            HundredFieldLineController.prototype.getTotalNumbers = function () {
-                var self = this;
-                return self.lineStop - self.lineStart + 1;
+            HundredFieldLineController.prototype.clicked = function (l) {
+                l.Css = 'btn btn-success btn-block';
             };
             return HundredFieldLineController;
         }());

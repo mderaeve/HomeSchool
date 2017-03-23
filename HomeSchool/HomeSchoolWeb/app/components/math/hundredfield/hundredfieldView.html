@@ -4,10 +4,7 @@
     </div>
     <div class="panel-body">
         <table>
-            <hundredfieldline start="1" stop="10"></hundredfieldline>
-            <hundredfieldline start="11" stop="20"></hundredfieldline>
-            <hundredfieldline start="21" stop="30"></hundredfieldline>
-            <hundredfieldline start="31" stop="40"></hundredfieldline>
+            <hundredfieldline ng-repeat="i in [1,11,21,31,41,51,61,71,81,91]" id="{{i}}" start="{{i}}" len="{{10}}"></hundredfieldline>
         </table>
     </div>
 </div>

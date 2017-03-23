@@ -6,12 +6,13 @@ module Home.Directives {
         return {
             templateUrl: 'app/directives/math/hundredfieldline/hundredFieldLineView.html',
             restrict: 'E',
+            scope: {},
             replace: true,
             controller: Home.Controllers.HundredFieldLineController.id,
             controllerAs: 'vm',
             bindToController: {
-                lineStart: '=start',
-                lineStop: '=stop'
+                lineStart: '@start',
+                lineLen: '@len'
             }
         }
     }
