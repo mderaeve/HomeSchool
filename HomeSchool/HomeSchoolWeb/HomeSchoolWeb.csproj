@@ -72,6 +72,7 @@
     <Content Include="app\components\home\homeView.html" />
     <Content Include="app\components\math\hundredfield\hundredfieldView.html" />
     <Content Include="app\components\math\tables\tablesView.html" />
+    <Content Include="app\directives\math\hundredfieldline\hundredFieldLineView.html" />
     <Content Include="app\directives\navigation\navigationView.html" />
     <Content Include="app\directives\user\userView.html" />
     <Content Include="app\modals\user\pickuser\pickUserModalView.html" />
@@ -158,6 +159,8 @@
     <TypeScriptCompile Include="app\components\home\homeController.ts" />
     <TypeScriptCompile Include="app\components\math\hundredfield\hundredfieldController.ts" />
     <TypeScriptCompile Include="app\components\math\tables\tablesController.ts" />
+    <TypeScriptCompile Include="app\directives\math\hundredfieldline\hundredFieldLineController.ts" />
+    <TypeScriptCompile Include="app\directives\math\hundredfieldline\hundredFieldLineDirective.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationController.ts" />
     <TypeScriptCompile Include="app\directives\navigation\navigationDirective.ts" />
     <TypeScriptCompile Include="app\directives\user\userController.ts" />

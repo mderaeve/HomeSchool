@@ -27,6 +27,7 @@ module Home.Controllers {
             const self = this;
             self.language = self.appLTSvc.getApplicationLanguage().Id;
             self.languageList = self.appLTSvc.getLanguages();
+
         }
 
         private setApplicationLanguageInStorage(appLanguage: number): void {

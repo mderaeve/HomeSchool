@@ -26,6 +26,7 @@ module Home.Controllers.Games {
 
         start(): void {
             const self = this;
+ 
             self.exercises = new Array<M.ITableExercise>();
             for (let i = 0; i < this.numberOfExercises;i++)
             {
@@ -47,7 +48,6 @@ module Home.Controllers.Games {
             {
                 ex.Css = 'glyphicon glyphicon-remove';
             }
-
         }
 
 
