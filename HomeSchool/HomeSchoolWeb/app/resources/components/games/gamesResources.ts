@@ -14,6 +14,10 @@
                 { key: 'tablesNrOfExercises', value: 'Number of exercises' },
                 { key: 'points', value: 'Points' },
                 { key: 'rank', value: 'Rank' },
+                { key: 'start', value: 'Start' },
+                { key: 'stop', value: 'Stop' },
+                { key: 'blind', value: 'Blind' },
+                { key: 'time', value: 'Time' },
             ];
 
             let Translations_nl: Array<C.KeyValuePair<string, string>> = [
@@ -26,6 +30,10 @@
                 { key: 'tablesNrOfExercises', value: 'Aantal oefeningen' },
                 { key: 'points', value: 'Punten' },
                 { key: 'rank', value: 'Rang' },
+                { key: 'start', value: 'Start' },
+                { key: 'stop', value: 'Stop' },
+                { key: 'blind', value: 'Blind' },
+                { key: 'time', value: 'Tijd' },
             ];
 
             self.languageDictionary = new C.Dictionary<string, C.Dictionary<string, string>>([

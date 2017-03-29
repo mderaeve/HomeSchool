@@ -25,6 +25,10 @@ var Home;
                     { key: 'tablesNrOfExercises', value: 'Number of exercises' },
                     { key: 'points', value: 'Points' },
                     { key: 'rank', value: 'Rank' },
+                    { key: 'start', value: 'Start' },
+                    { key: 'stop', value: 'Stop' },
+                    { key: 'blind', value: 'Blind' },
+                    { key: 'time', value: 'Time' },
                 ];
                 var Translations_nl = [
                     { key: 'tablesTitle', value: 'Tafels oefenen' },
@@ -36,6 +40,10 @@ var Home;
                     { key: 'tablesNrOfExercises', value: 'Aantal oefeningen' },
                     { key: 'points', value: 'Punten' },
                     { key: 'rank', value: 'Rang' },
+                    { key: 'start', value: 'Start' },
+                    { key: 'stop', value: 'Stop' },
+                    { key: 'blind', value: 'Blind' },
+                    { key: 'time', value: 'Tijd' },
                 ];
                 self.languageDictionary = new C.Dictionary([
                     { key: 'en', value: new C.Dictionary(Translations_en) },

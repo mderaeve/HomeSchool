@@ -281,3 +281,4 @@ __pycache__/
 # !tools/packages.config
 
 *.zip
+*.suo
